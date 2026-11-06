@@ -6,3 +6,5 @@ Stand-alone video player that synchronizes to Audacity 4.x timecode output.
 - Drop the video into Audacity 4.x to load its audio track
 - Settings are available in VIDSYNC for light/dark mode, accent color, and "keep on top".  Settings are persistent across sessions.
 - VIDSYNC will align the video to the timecode output from Audacity during seeking, playback and recording.  There must be an audio track with content present in Audacity for playback to function.
+
+- Download available in "Releases" on the right
