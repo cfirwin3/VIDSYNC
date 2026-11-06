@@ -8,3 +8,4 @@ Stand-alone video player that synchronizes to Audacity 4.x timecode output.
 - VIDSYNC will align the video to the timecode output from Audacity during seeking, playback and recording.  There must be an audio track with content present in Audacity for playback to function.
 
 - Download available in "Releases" on the right
+<img width="1920" height="1080" alt="VidSync" src="https://github.com/user-attachments/assets/dbd4a3f1-f7be-4b8d-9a92-fcd2d85fda9f" />
