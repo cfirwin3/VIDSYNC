@@ -1,0 +1,16 @@
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/debug/deps/vidsync-acaca2d2c0f02e29.d: src/main.rs src/audacity.rs src/browser.rs src/player.rs src/topmost.rs src/ui.rs src/../assets/fonts/DejaVuSans.ttf src/../assets/fonts/DejaVuSans-Bold.ttf src/../assets/fonts/DejaVuSansMono.ttf src/../assets/fonts/DejaVuSansMono-Bold.ttf src/../assets/sample.mp4 src/../assets/vidsync.png
+
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/debug/deps/vidsync-acaca2d2c0f02e29: src/main.rs src/audacity.rs src/browser.rs src/player.rs src/topmost.rs src/ui.rs src/../assets/fonts/DejaVuSans.ttf src/../assets/fonts/DejaVuSans-Bold.ttf src/../assets/fonts/DejaVuSansMono.ttf src/../assets/fonts/DejaVuSansMono-Bold.ttf src/../assets/sample.mp4 src/../assets/vidsync.png
+
+src/main.rs:
+src/audacity.rs:
+src/browser.rs:
+src/player.rs:
+src/topmost.rs:
+src/ui.rs:
+src/../assets/fonts/DejaVuSans.ttf:
+src/../assets/fonts/DejaVuSans-Bold.ttf:
+src/../assets/fonts/DejaVuSansMono.ttf:
+src/../assets/fonts/DejaVuSansMono-Bold.ttf:
+src/../assets/sample.mp4:
+src/../assets/vidsync.png:

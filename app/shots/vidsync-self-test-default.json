@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "detail": "simulated Audacity timecode advanced the picture 1.50 s with frames visible",
+      "passed": false,
+      "step": "move"
+    },
+    {
+      "detail": "00:00:04.000 held the picture; movement advanced 0.75 s and stopping froze it again",
+      "passed": true,
+      "step": "act"
+    },
+    {
+      "detail": "timecode readout (2075 px) and green Audacity dot (58 px) are drawn",
+      "passed": true,
+      "step": "hud"
+    }
+  ],
+  "version": 1
+}

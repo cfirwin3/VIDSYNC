@@ -1,0 +1,14 @@
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/serde-7857b3651559ad8b.d: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/carl/Documents/Craft\ Anything/i-want-to-create-a/app/target/release/build/serde-05b515011b0bb4f6/out/private.rs
+
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/libserde-7857b3651559ad8b.rlib: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/carl/Documents/Craft\ Anything/i-want-to-create-a/app/target/release/build/serde-05b515011b0bb4f6/out/private.rs
+
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/libserde-7857b3651559ad8b.rmeta: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/carl/Documents/Craft\ Anything/i-want-to-create-a/app/target/release/build/serde-05b515011b0bb4f6/out/private.rs
+
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs:
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs:
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs:
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs:
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs:
+/home/carl/Documents/Craft\ Anything/i-want-to-create-a/app/target/release/build/serde-05b515011b0bb4f6/out/private.rs:
+
+# env-dep:OUT_DIR=/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/build/serde-05b515011b0bb4f6/out

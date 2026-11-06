@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=VIDSYNC
+GenericName=Video Player
+Comment=Video-only player that follows Audacity 4.0's timecode
+Exec=vidsync
+TryExec=vidsync
+Icon=vidsync
+Terminal=false
+Categories=AudioVideo;Video;Player;
+StartupWMClass=vidsync
+Keywords=video;player;audacity;sync;timecode;
