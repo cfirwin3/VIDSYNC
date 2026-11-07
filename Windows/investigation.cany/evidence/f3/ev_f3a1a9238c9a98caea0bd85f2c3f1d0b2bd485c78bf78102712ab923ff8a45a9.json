@@ -1,0 +1,64 @@
+{
+  "id": "ev_f3a1a9238c9a98caea0bd85f2c3f1d0b2bd485c78bf78102712ab923ff8a45a9",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "Audacity not found"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x411c20",
+        "name": "sub_411c20",
+        "why": [
+          "uses string \"ecode was not foundAccessibilitynot foundNo suchwaiting for \""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "Audacity not found",
+    "strings": [
+      {
+        "address": "0x31cc70",
+        "references": [
+          {
+            "from": "0x411c3a",
+            "function": "sub_411c20",
+            "kind": "string"
+          }
+        ],
+        "text": "ecode was not foundAccessibilitynot foundNo suchwaiting for AudacityAudacity not foundaccessibility bus unavailableset Audacity to 00h00m00.000stimecode format not recognisedNoDisplayCreateContextFailedLibraryNotFound"
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"Audacity not found\": 1 matching strings, 0 matching function names, 0 matching imports; 1 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x411c20"
+    }
+  ],
+  "links": []
+}

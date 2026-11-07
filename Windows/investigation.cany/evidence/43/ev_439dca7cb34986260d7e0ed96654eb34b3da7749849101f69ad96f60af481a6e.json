@@ -1,0 +1,164 @@
+{
+  "id": "ev_439dca7cb34986260d7e0ed96654eb34b3da7749849101f69ad96f60af481a6e",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "220"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x11ea55",
+        "references": [],
+        "section": ".rodata",
+        "text": "220@"
+      },
+      {
+        "address": "0x128355",
+        "references": [],
+        "section": ".rodata",
+        "text": "2220"
+      },
+      {
+        "address": "0x12d735",
+        "references": [],
+        "section": ".rodata",
+        "text": "2220"
+      },
+      {
+        "address": "0x1331db",
+        "references": [],
+        "section": ".rodata",
+        "text": "933.1220W@R"
+      },
+      {
+        "address": "0x150baf",
+        "references": [],
+        "section": ".rodata",
+        "text": "220%3"
+      },
+      {
+        "address": "0x151b76",
+        "references": [],
+        "section": ".rodata",
+        "text": "1220"
+      },
+      {
+        "address": "0x17f0f4",
+        "references": [],
+        "section": ".rodata",
+        "text": "220K"
+      },
+      {
+        "address": "0x198c47",
+        "references": [],
+        "section": ".rodata",
+        "text": ".1220"
+      },
+      {
+        "address": "0x199887",
+        "references": [],
+        "section": ".rodata",
+        "text": ".1220"
+      },
+      {
+        "address": "0x19a34f",
+        "references": [],
+        "section": ".rodata",
+        "text": ".1220"
+      },
+      {
+        "address": "0x19b02c",
+        "references": [],
+        "section": ".rodata",
+        "text": ".1220"
+      },
+      {
+        "address": "0x1a3518",
+        "references": [],
+        "section": ".rodata",
+        "text": "220%"
+      },
+      {
+        "address": "0x1a35a8",
+        "references": [],
+        "section": ".rodata",
+        "text": "220#5!"
+      },
+      {
+        "address": "0x1be548",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni0220"
+      },
+      {
+        "address": "0x1c3a18",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni2201"
+      },
+      {
+        "address": "0x1c3a2c",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni2204"
+      },
+      {
+        "address": "0x1c3a59",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni220A"
+      },
+      {
+        "address": "0x1c3a6a",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni220C"
+      },
+      {
+        "address": "0x1c3a72",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni220D"
+      },
+      {
+        "address": "0x1c3a7a",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni220E"
+      }
+    ],
+    "total": 55
+  },
+  "summary": "55 strings match \"220\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "partial",
+    "examined": 20,
+    "total": 55,
+    "next_offset": 20
+  },
+  "locations": [],
+  "links": []
+}

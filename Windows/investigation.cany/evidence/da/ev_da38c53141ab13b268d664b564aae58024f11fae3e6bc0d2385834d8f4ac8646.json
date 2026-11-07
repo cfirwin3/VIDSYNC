@@ -1,0 +1,73 @@
+{
+  "id": "ev_da38c53141ab13b268d664b564aae58024f11fae3e6bc0d2385834d8f4ac8646",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x4018a0"
+  },
+  "result": {
+    "calls": [
+      "malloc",
+      "sub_4019d0",
+      "sub_40f898",
+      "sub_5ddc70"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x4018a0",
+    "function": "sub_4018a0",
+    "gotos": 0,
+    "inline_asm": 14,
+    "pseudo_code": "int64_t sub_4018a0(int64_t rdi)\n{\n    rbx = rdi;\n    rax = \"ChildCount\";\n    sub_4019d0(&stack_8);\n    eax = stack_8;\n    if (al == 0xff) {\n        __asm(\"movups xmm0, [rsp+0x10]\");\n        __asm(\"movups [rbx], xmm0\");\n        return rax;\n    } else {\n        ecx = stack_9;\n        edx = stack_c;\n        stack_4c = edx;\n        stack_49 = ecx;\n        __asm(\"movups xmm0, [rsp+0x20]\");\n        __asm(\"movups [rsp+0x60], xmm0\");\n        __asm(\"movups xmm0, [rsp+0x30]\");\n        __asm(\"movups [rsp+0x70], xmm0\");\n        rcx = stack_40;\n        stack_80 = rcx;\n        __asm(\"movups xmm0, [rsp+0x10]\");\n        stack_48 = al;\n        __asm(\"movups [rsp+0x50], xmm0\");\n        if (al != 4) {\n            sub_5ddc70(&stack_48);\n            stack_8 = 0x16;\n            rax = malloc(0x38);\n            if (rax == 0) {\n                sub_40f898(8, 0x38);\n                __halt(); /* stops here */\n            } else {\n                rcx = stack_38;\n                *(uint64_t*)(rax + 0x30) = rcx;\n                __asm(\"movups xmm0, [rsp+8]\");\n                __asm(\"movups xmm1, [rsp+0x18]\");\n                __asm(\"movups xmm2, [rsp+0x28]\");\n                __asm(\"movups [rax+0x20], xmm2\");\n                __asm(\"movups [rax+0x10], xmm1\");\n                __asm(\"movups [rax], xmm0\");\n                *(uint64_t*)(rbx) = rax;\n                rax = &data_5ef0f0;\n                *(uint64_t*)(rbx + 8) = rax;\n                return rax;\n            }\n        } else {\n            sub_5ddc70(&stack_48);\n            *(uint32_t*)(rbx + 8) = ebp;\n            *(uint64_t*)(rbx) = 0;\n            return rax;\n        }\n    }\n}\n",
+    "signature": "int64_t sub_4018a0(int64_t rdi)",
+    "strings": [
+      "ChildCount"
+    ],
+    "structured": true
+  },
+  "summary": "Pseudo-C for sub_4018a0 (53 lines).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "inline_asm",
+      "message": "14 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x4018a0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

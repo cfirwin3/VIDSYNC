@@ -1,0 +1,59 @@
+{
+  "id": "ev_642b1c44333e9a04b54c32828a81743a6019f9d6ec455240246237b35d791e11",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_evidence_browse",
+  "params": {
+    "show": {
+      "kind": "part",
+      "name": "callers"
+    },
+    "source": {
+      "evidence_id": "ev_d066912e727a4e1759a039f0ca818d0a2f0ddba6c9000e7bc8fb2ad91f055141",
+      "kind": "saved"
+    }
+  },
+  "result": {
+    "coverage": {
+      "at_end": true,
+      "examined": 1,
+      "next_offset": null,
+      "status": "all-in-view",
+      "total": 1
+    },
+    "from_evidence": "ev_d066912e727a4e1759a039f0ca818d0a2f0ddba6c9000e7bc8fb2ad91f055141",
+    "from_tool": "native_function_study",
+    "shown": {
+      "part": "callers",
+      "value": [
+        {
+          "caller": null,
+          "name": null,
+          "site": "0x3fdddd"
+        }
+      ]
+    }
+  },
+  "summary": "Part of native_function_study evidence (all-in-view).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": [
+    "ev_d066912e727a4e1759a039f0ca818d0a2f0ddba6c9000e7bc8fb2ad91f055141"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ev_192097748049f7364bf2904571e2d83fa3251cdad8dae26d90d89987a8b043bb",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x3da970"
+  },
+  "result": {
+    "calls": [
+      "malloc",
+      "sub_40f885"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x3da970",
+    "function": "sub_3da970",
+    "gotos": 0,
+    "inline_asm": 4,
+    "pseudo_code": "int64_t sub_3da970(int64_t rdi)\n{\n    rbx = rdi;\n    rax = malloc(0x25);\n    if (rax == 0) {\n        sub_40f885(1, 0x25);\n        __debugbreak();\n    } else {\n        __asm(\"movups xmm0, [0x214d7]\");\n        __asm(\"movups [rax+0x10], xmm0\");\n        __asm(\"movups xmm0, [0x214c7]\");\n        __asm(\"movups [rax], xmm0\");\n        rcx = 0x656c696620736968;\n        *(uint64_t*)(rax + 0x1d) = rcx;\n        *(uint64_t*)(rbx) = 0x25;\n        *(uint64_t*)(rbx + 8) = rax;\n        *(uint64_t*)(rbx + 16) = 0x25;\n        return rax;\n    }\n}\n",
+    "signature": "int64_t sub_3da970(int64_t rdi)",
+    "strings": [],
+    "structured": true
+  },
+  "summary": "Pseudo-C for sub_3da970 (20 lines).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "inline_asm",
+      "message": "4 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3da970"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

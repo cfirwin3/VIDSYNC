@@ -1,0 +1,42 @@
+{
+  "id": "ev_b515a806b6287f345b82d6ac899646fbc11667b231c24456a6800a47ae07f0d7",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_find",
+  "params": {
+    "address": "0x3fdddd"
+  },
+  "result": {
+    "address": "0x3fdddd",
+    "function": null,
+    "reason": "not inside any discovered function"
+  },
+  "summary": "0x3fdddd isn't inside a known function.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "not_found",
+      "message": "the address may be in code the engine didn't discover (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3fdddd"
+    }
+  ],
+  "links": []
+}

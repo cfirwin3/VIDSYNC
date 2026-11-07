@@ -1,0 +1,414 @@
+{
+  "id": "ev_b1d3171e900089952b1786fc1538ec4e910c50ec96c7d307a422267ab6fc89ed",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_rust_binary_show",
+  "params": {
+    "path": "/tmp/opencode/vidsync-appimage/squashfs-root/usr/bin/vidsync"
+  },
+  "result": {
+    "container": "elf",
+    "file_size": 6270200,
+    "path": "/tmp/opencode/vidsync-appimage/squashfs-root/usr/bin/vidsync",
+    "report": {
+      "auditable": null,
+      "auditable_error": null,
+      "crates": [
+        {
+          "name": "addr2line",
+          "occurrences": 3,
+          "origin": "toolchain-vendored",
+          "source": "toolchain-vendored",
+          "version": "0.27.1"
+        },
+        {
+          "name": "async-broadcast",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.7.2"
+        },
+        {
+          "name": "async-executor",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.14.1"
+        },
+        {
+          "name": "async-io",
+          "occurrences": 4,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.6.0"
+        },
+        {
+          "name": "async-lock",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "3.5.0"
+        },
+        {
+          "name": "async-process",
+          "occurrences": 4,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.5.0"
+        },
+        {
+          "name": "async-task",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "4.7.1"
+        },
+        {
+          "name": "blocking",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.7.0"
+        },
+        {
+          "name": "concurrent-queue",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.5.0"
+        },
+        {
+          "name": "endi",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.1.1"
+        },
+        {
+          "name": "event-listener",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "5.4.2"
+        },
+        {
+          "name": "event-listener-strategy",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.5.4"
+        },
+        {
+          "name": "fastrand",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.5.0"
+        },
+        {
+          "name": "fdeflate",
+          "occurrences": 3,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.3.7"
+        },
+        {
+          "name": "flate2",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.1.10"
+        },
+        {
+          "name": "fontdue",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.9.5"
+        },
+        {
+          "name": "futures-lite",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.6.1"
+        },
+        {
+          "name": "gimli",
+          "occurrences": 3,
+          "origin": "toolchain-vendored",
+          "source": "toolchain-vendored",
+          "version": "0.34.0"
+        },
+        {
+          "name": "hashbrown",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.15.5"
+        },
+        {
+          "name": "hashbrown",
+          "occurrences": 1,
+          "origin": "toolchain-vendored",
+          "source": "toolchain-vendored",
+          "version": "0.17.1"
+        },
+        {
+          "name": "hex",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.4.3"
+        },
+        {
+          "name": "image",
+          "occurrences": 5,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.24.9"
+        },
+        {
+          "name": "itoa",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.0.18"
+        },
+        {
+          "name": "macroquad",
+          "occurrences": 10,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.4.16"
+        },
+        {
+          "name": "miniquad",
+          "occurrences": 14,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.4.11"
+        },
+        {
+          "name": "miniz_oxide",
+          "occurrences": 3,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.9.1"
+        },
+        {
+          "name": "miniz_oxide",
+          "occurrences": 2,
+          "origin": "toolchain-vendored",
+          "source": "toolchain-vendored",
+          "version": "0.9.1"
+        },
+        {
+          "name": "once_cell",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.21.4"
+        },
+        {
+          "name": "parking",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.2.1"
+        },
+        {
+          "name": "png",
+          "occurrences": 12,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.17.16"
+        },
+        {
+          "name": "polling",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "3.11.0"
+        },
+        {
+          "name": "rustc-demangle",
+          "occurrences": 3,
+          "origin": "toolchain-vendored",
+          "source": "toolchain-vendored",
+          "version": "0.1.28"
+        },
+        {
+          "name": "rustix",
+          "occurrences": 4,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.1.6"
+        },
+        {
+          "name": "serde_json",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.0.154"
+        },
+        {
+          "name": "signal-hook-registry",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.4.8"
+        },
+        {
+          "name": "slab",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.4.12"
+        },
+        {
+          "name": "ttf-parser",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "0.25.1"
+        },
+        {
+          "name": "winnow",
+          "occurrences": 2,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "1.0.4"
+        },
+        {
+          "name": "x11-dl",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "2.21.0"
+        },
+        {
+          "name": "zbus",
+          "occurrences": 37,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "5.19.0"
+        },
+        {
+          "name": "zvariant",
+          "occurrences": 10,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "5.15.1"
+        },
+        {
+          "name": "zvariant_utils",
+          "occurrences": 1,
+          "origin": "index.crates.io-1949cf8c6b5b557f",
+          "source": "registry",
+          "version": "4.2.0"
+        }
+      ],
+      "is_rust": true,
+      "panic_messages": [
+        {
+          "count": 1,
+          "value": "called `Option::unwrap()` on a `None` value"
+        },
+        {
+          "count": 1,
+          "value": "called `Result::unwrap()` on an `Err` value"
+        },
+        {
+          "count": 1,
+          "value": "index out of bounds: the len is "
+        },
+        {
+          "count": 2,
+          "value": "RUST_BACKTRACE"
+        }
+      ],
+      "rustc_commits": [
+        {
+          "count": 90,
+          "value": "58cf8f9c35b355199727627d07ae34a4e2846d67"
+        }
+      ],
+      "rustc_versions": [
+        {
+          "count": 1,
+          "value": "1.99.1 (58cf8f9c3 2026-10-13)"
+        }
+      ],
+      "signals": [
+        "Rust toolchain source paths (/rustc/<commit>/)",
+        "rustc version string",
+        "42 Cargo dependency paths",
+        "Rust standard-library panic text"
+      ],
+      "source_paths": {
+        "dependencies": 152,
+        "local": [
+          {
+            "count": 1,
+            "value": "src/audacity.rs"
+          },
+          {
+            "count": 1,
+            "value": "src/main.rs"
+          },
+          {
+            "count": 1,
+            "value": "src/ui.rs"
+          }
+        ],
+        "local_truncated": false,
+        "toolchain": 90
+      },
+      "std_layout": "library/ (rustc 1.47 or later)",
+      "strength": "strong",
+      "symbols": {
+        "crates": [],
+        "rust_legacy": 0,
+        "rust_v0": 0,
+        "samples": [],
+        "stripped": true,
+        "total": 282
+      }
+    }
+  },
+  "summary": "Strong Rust evidence rustc 1.99.1 (58cf8f9c3 2026-10-13): 42 crate(s) from Cargo paths, 3 local source path(s), symbols stripped or absent.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.3.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "string_heuristics",
+      "message": "Crates, versions and source paths come from text left in the file; a path next to other text can pick up a few stray characters, and crates without panics or debug paths leave no trace."
+    },
+    {
+      "code": "no_auditable_data",
+      "message": "No cargo-auditable (.dep-v0) section: the crate list is partial and versions come only from paths."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "path",
+      "value": "/tmp/opencode/vidsync-appimage/squashfs-root/usr/bin/vidsync"
+    }
+  ],
+  "links": []
+}

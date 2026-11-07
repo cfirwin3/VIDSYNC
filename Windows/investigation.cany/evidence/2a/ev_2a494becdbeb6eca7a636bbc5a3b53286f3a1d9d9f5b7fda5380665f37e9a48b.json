@@ -1,0 +1,69 @@
+{
+  "id": "ev_2a494becdbeb6eca7a636bbc5a3b53286f3a1d9d9f5b7fda5380665f37e9a48b",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "vidsync"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x21531",
+        "references": [
+          {
+            "from": "0x3dc799",
+            "function": "sub_3db170"
+          },
+          {
+            "from": "0x3f3cdc",
+            "function": "sub_3f3ca0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "vidsync"
+      },
+      {
+        "address": "0x21538",
+        "references": [
+          {
+            "from": "0x3db064",
+            "function": "sub_3dafb0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "vidsync-sample.mp4"
+      }
+    ],
+    "total": 2
+  },
+  "summary": "2 strings match \"vidsync\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [],
+  "links": []
+}

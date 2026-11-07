@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "values": [
+    {
+      "name": "timecode source",
+      "group": "following",
+      "value": "UI Automation accessible name or Value pattern: Playback position:00 h 00 m 11.037 s (AT-SPI accessible name on Linux)",
+      "source": "functions 0x3f6f40, 0x3f6db0, 0x4018a0, 0x4019d0 (original AT-SPI); Windows UIA port"
+    },
+    {
+      "name": "timecode readout format",
+      "group": "following",
+      "value": "HH:MM:SS.mmm",
+      "source": "user request"
+    },
+    {
+      "name": "required Audacity display",
+      "group": "following",
+      "value": "00h00m00.000s",
+      "source": "user request"
+    },
+    {
+      "name": "green dot condition",
+      "group": "following",
+      "value": "Audacity found and timecode in 00h00m00.000s form",
+      "source": "user request"
+    },
+    {
+      "name": "red dot condition",
+      "group": "following",
+      "value": "Audacity not found or another timecode display",
+      "source": "user request"
+    },
+    {
+      "name": "window order dependency",
+      "group": "following",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "timecode poll interval",
+      "group": "following",
+      "value": 33,
+      "unit": "ms",
+      "source": "function 0x3f7a10; .rodata 0x12438 (1/30 s)"
+    },
+    {
+      "name": "movement window",
+      "group": "following",
+      "value": 220,
+      "unit": "ms",
+      "source": "function 0x3f7a10"
+    },
+    {
+      "name": "movement threshold",
+      "group": "following",
+      "value": 0.0005,
+      "unit": "s",
+      "source": "function 0x3f7a10; .rodata 0x12548"
+    },
+    {
+      "name": "timecode jump threshold",
+      "group": "following",
+      "value": 0.4,
+      "unit": "s",
+      "source": "function 0x3e2630 (decoder restart); .rodata 0x12238"
+    },
+    {
+      "name": "still-frame refresh threshold",
+      "group": "following",
+      "value": 0.02,
+      "unit": "s",
+      "source": "functions 0x3e2630, 0x3f0820; .rodata 0x120e0"
+    },
+    {
+      "name": "audacity rediscovery interval",
+      "group": "following",
+      "value": 12,
+      "unit": "s",
+      "source": "function 0x3f7a10 (1.5 s x 8)"
+    },
+    {
+      "name": "rediscovery timer step",
+      "group": "following",
+      "value": 1.5,
+      "unit": "s",
+      "source": "function 0x3f7a10"
+    },
+    {
+      "name": "failed discovery retry",
+      "group": "following",
+      "value": 1,
+      "unit": "s",
+      "source": "function 0x3f7a10"
+    },
+    {
+      "name": "accessible-tree depth limit",
+      "group": "following",
+      "value": 14,
+      "unit": "levels",
+      "source": "function 0x3f6f40"
+    },
+    {
+      "name": "accessible-name length limit",
+      "group": "following",
+      "value": 96,
+      "unit": "bytes",
+      "source": "function 0x3f6db0 (looks_like_timecode)"
+    },
+    {
+      "name": "audacity version observed",
+      "group": "following",
+      "value": "4.0.2",
+      "source": "observed build machine"
+    },
+    {
+      "name": "display server",
+      "group": "following",
+      "value": "Windows 10 or 11 with UI Automation (Linux AT-SPI on the original)",
+      "source": "Windows platform mapping"
+    },
+    {
+      "name": "playback rate",
+      "group": "playback",
+      "value": 1.0,
+      "unit": "x",
+      "source": "user request"
+    },
+    {
+      "name": "output frame rate",
+      "group": "playback",
+      "value": 30,
+      "unit": "fps",
+      "source": "function 0x3e2630 (decoder arguments -r 30); .rodata 0x120f0"
+    },
+    {
+      "name": "maximum decoded width",
+      "group": "playback",
+      "value": 1280,
+      "unit": "px",
+      "source": "function 0x3e2630; .rodata 0x10eb0"
+    },
+    {
+      "name": "maximum decoded height",
+      "group": "playback",
+      "value": 720,
+      "unit": "px",
+      "source": "function 0x3e2630; .rodata 0x10eb8"
+    },
+    {
+      "name": "decoded frame queue",
+      "group": "playback",
+      "value": 12,
+      "unit": "frames",
+      "source": "function 0x3f0820"
+    },
+    {
+      "name": "decoder channel buffer",
+      "group": "playback",
+      "value": 8,
+      "unit": "frames",
+      "source": "function 0x3e2630"
+    },
+    {
+      "name": "longest accepted frame step",
+      "group": "playback",
+      "value": 0.1,
+      "unit": "s",
+      "source": "function 0x3d1e10"
+    },
+    {
+      "name": "frame-due tolerance",
+      "group": "playback",
+      "value": 0.045,
+      "unit": "s",
+      "source": "function 0x3f0820; .rodata 0x12320"
+    },
+    {
+      "name": "end tolerance",
+      "group": "playback",
+      "value": 0.001,
+      "unit": "s",
+      "source": "function 0x3e2630; .rodata 0x124f8"
+    },
+    {
+      "name": "audio output",
+      "group": "playback",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "dropped streams",
+      "group": "playback",
+      "value": "audio, subtitles and data (-an -sn -dn)",
+      "source": "function 0x3e2630 (decoder arguments)"
+    },
+    {
+      "name": "decoded pixel format",
+      "group": "playback",
+      "value": "rgba",
+      "source": "function 0x3e2630 (decoder arguments)"
+    },
+    {
+      "name": "scaling filter",
+      "group": "playback",
+      "value": "bicubic, aspect ratio preserved",
+      "source": "function 0x3e2630 (-vf scale=...:flags=bicubic,setsar=1,format=rgba)"
+    },
+    {
+      "name": "video format support",
+      "group": "playback",
+      "value": "whatever the bundled ffmpeg can decode",
+      "source": "user request"
+    },
+    {
+      "name": "ffmpeg discovery",
+      "group": "playback",
+      "value": "CUE_FFMPEG, ffmpeg.exe beside the player, tools\\ffmpeg.exe, then PATH",
+      "source": "Windows platform mapping"
+    },
+    {
+      "name": "ffprobe discovery",
+      "group": "playback",
+      "value": "CUE_FFPROBE, ffprobe.exe beside the player, tools\\ffprobe.exe, then PATH",
+      "source": "Windows platform mapping"
+    },
+    {
+      "name": "media probe",
+      "group": "playback",
+      "value": "ffprobe reads width, height and duration in JSON form",
+      "source": "function 0x3e7780 (ffprobe)"
+    },
+    {
+      "name": "play button",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "pause button",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "record button",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "start-time field",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "Audacity toggle switch",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "open shortcut",
+      "group": "controls",
+      "value": "O",
+      "source": "function 0x3d1e10"
+    },
+    {
+      "name": "fullscreen shortcut",
+      "group": "controls",
+      "value": "F",
+      "source": "function 0x3d1e10"
+    },
+    {
+      "name": "fullscreen cancel shortcut",
+      "group": "controls",
+      "value": "Escape",
+      "source": "user request"
+    },
+    {
+      "name": "fullscreen button",
+      "group": "controls",
+      "value": true,
+      "source": "user request"
+    },
+    {
+      "name": "close settings shortcut",
+      "group": "controls",
+      "value": "Escape",
+      "source": "function 0x3d1e10"
+    },
+    {
+      "name": "drag and drop",
+      "group": "controls",
+      "value": false,
+      "source": "user request"
+    },
+    {
+      "name": "file loading",
+      "group": "controls",
+      "value": "browser only",
+      "source": "user request"
+    },
+    {
+      "name": "empty-stage message",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "sample-clip shortcut",
+      "group": "controls",
+      "value": "none",
+      "source": "user request"
+    },
+    {
+      "name": "keep-on-top setting",
+      "group": "controls",
+      "value": true,
+      "source": "user request"
+    },
+    {
+      "name": "keep-on-top default",
+      "group": "controls",
+      "value": false,
+      "source": "port default"
+    },
+    {
+      "name": "keep-on-top persistence",
+      "group": "controls",
+      "value": true,
+      "source": "function 0x3f3ca0 (settings file); user request"
+    },
+    {
+      "name": "keep-on-top mechanism",
+      "group": "controls",
+      "value": "SetWindowPos with HWND_TOPMOST / HWND_NOTOPMOST",
+      "source": "Windows port (Win32 SetWindowPos)"
+    },
+    {
+      "name": "settings location",
+      "group": "controls",
+      "value": "%APPDATA%\\vidsync\\settings.json",
+      "source": "function 0x3f3ca0 (original XDG path); Windows port mapping"
+    },
+    {
+      "name": "window width",
+      "group": "interface",
+      "value": 1120,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "window height",
+      "group": "interface",
+      "value": 720,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "video viewport margin",
+      "group": "interface",
+      "value": 0,
+      "unit": "px",
+      "source": "user request"
+    },
+    {
+      "name": "top bar height",
+      "group": "interface",
+      "value": 52,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact top bar height",
+      "group": "interface",
+      "value": 44,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "status bar height",
+      "group": "interface",
+      "value": 70,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact status bar height",
+      "group": "interface",
+      "value": 58,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "status bar side padding",
+      "group": "interface",
+      "value": 18,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact status bar side padding",
+      "group": "interface",
+      "value": 12,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "timecode font size",
+      "group": "interface",
+      "value": 32,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact timecode font size",
+      "group": "interface",
+      "value": 22,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "narrow timecode font size",
+      "group": "interface",
+      "value": 18,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "timecode area width",
+      "group": "interface",
+      "value": 280,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact timecode area width",
+      "group": "interface",
+      "value": 200,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "narrow timecode area width",
+      "group": "interface",
+      "value": 160,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "Audacity label size",
+      "group": "interface",
+      "value": 14,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact Audacity label size",
+      "group": "interface",
+      "value": 12,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "status dot radius",
+      "group": "interface",
+      "value": 4.5,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact breakpoint",
+      "group": "interface",
+      "value": 880,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "narrowest layout breakpoint",
+      "group": "interface",
+      "value": 500,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "smallest tested window width",
+      "group": "interface",
+      "value": 460,
+      "unit": "px",
+      "estimated": true
+    },
+    {
+      "name": "smallest tested window height",
+      "group": "interface",
+      "value": 360,
+      "unit": "px",
+      "estimated": true
+    },
+    {
+      "name": "toast duration",
+      "group": "interface",
+      "value": 4.5,
+      "unit": "s",
+      "source": "function 0x3d1e10; .rodata 0x124d0"
+    },
+    {
+      "name": "file browser double-click window",
+      "group": "interface",
+      "value": 0.38,
+      "unit": "s",
+      "source": "function 0x3e9490; .rodata 0x12398"
+    },
+    {
+      "name": "file browser sidebar breakpoint",
+      "group": "interface",
+      "value": 540,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "file browser footer height",
+      "group": "interface",
+      "value": 62,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "compact file browser footer height",
+      "group": "interface",
+      "value": 52,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "theme choices",
+      "group": "interface",
+      "value": "orange,yellow,green,blue,purple,red",
+      "source": "user request"
+    },
+    {
+      "name": "default theme",
+      "group": "interface",
+      "value": "purple",
+      "source": "user request"
+    },
+    {
+      "name": "interface mode choices",
+      "group": "interface",
+      "value": "dark,light",
+      "source": "user request"
+    },
+    {
+      "name": "default interface mode",
+      "group": "interface",
+      "value": "dark",
+      "source": "user request"
+    },
+    {
+      "name": "settings panel width",
+      "group": "interface",
+      "value": 238,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "settings panel height",
+      "group": "interface",
+      "value": 168,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "settings swatch size",
+      "group": "interface",
+      "value": 24,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "settings swatch spacing",
+      "group": "interface",
+      "value": 34,
+      "unit": "px",
+      "source": "function 0x3e9490"
+    },
+    {
+      "name": "keep-on-top switch width",
+      "group": "interface",
+      "value": 40,
+      "unit": "px",
+      "source": "function 0x3e9490 (panel geometry); user request"
+    },
+    {
+      "name": "keep-on-top switch height",
+      "group": "interface",
+      "value": 20,
+      "unit": "px",
+      "source": "function 0x3e9490 (panel geometry); user request"
+    },
+    {
+      "name": "keep-on-top row height",
+      "group": "interface",
+      "value": 28,
+      "unit": "px",
+      "source": "function 0x3e9490 (panel geometry); user request"
+    },
+    {
+      "name": "screenshot verification mode",
+      "group": "interface",
+      "value": "--screenshot <file.png> renders the player at 1120x720 with the bundled sample clip",
+      "source": "Windows port self-check"
+    }
+  ]
+}

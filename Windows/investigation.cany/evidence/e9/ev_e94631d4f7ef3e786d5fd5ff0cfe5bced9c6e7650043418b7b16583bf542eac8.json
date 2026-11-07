@@ -1,0 +1,76 @@
+{
+  "id": "ev_e94631d4f7ef3e786d5fd5ff0cfe5bced9c6e7650043418b7b16583bf542eac8",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x401410"
+  },
+  "result": {
+    "calls": [
+      "free",
+      "malloc",
+      "sub_3f11d0",
+      "sub_40f885",
+      "sub_40f8b0"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x401410",
+    "function": "sub_401410",
+    "gotos": 42,
+    "inline_asm": 34,
+    "pseudo_code": "int64_t sub_401410(int64_t rsi)\n{\n    if (rsi < 0) {\n        sub_40f8b0();\n    }\n    rbx = rsi;\n    if (/* Eq */ flags) {\n        r14d = 1;\n    } else {\n        r15 = rdi;\n        rax = malloc(rbx);\n        if (rax == 0) {\n            sub_40f885(1, rbx);\nlabel_40156f:\n            if (rbx != rcx) {\nlabel_401574:\n                edx = *(uint8_t*)(rax + rcx);\n                esi = rdx - 0x41;\n                __asm(\"setb sil\");\n                sil <<= 5;\n                sil |= dl;\n                *(uint8_t*)(r14 + rcx) = sil;\n                rcx++;\n                goto label_40156f;\n            }\n        } else {\n            r14 = rax;\n            if (rbx >= 8 /* unsigned */) {\n                rdx = 0x7fffffffffffffe0;\n                rax = r15;\n                if (rbx >= 0x20 /* unsigned */) {\n                    rcx = rbx;\n                    rcx &= rdx;\n                    esi = 0;\n                    __asm(\"movdqa xmm0, [0x10f30]\");\n                    __asm(\"movdqa xmm1, [0x10720]\");\n                    __asm(\"movdqa xmm2, [0x114d0]\");\n                    while (true) {\n                        __asm(\"movdqu xmm3, [rax+rsi]\");\n                        __asm(\"movdqu xmm4, [rax+rsi+0x10]\");\n                        __asm(\"movdqa xmm5, xmm3\");\n                        __asm(\"paddb xmm5, xmm0\");\n                        __asm(\"movdqa xmm6, xmm4\");\n                        __asm(\"paddb xmm6, xmm0\");\n                        __asm(\"movdqa xmm7, xmm5\");\n                        __asm(\"pminub xmm7, xmm1\");\n                        __asm(\"pcmpeqb xmm7, xmm5\");\n                        __asm(\"pand xmm7, xmm2\");\n                        __asm(\"movdqa xmm5, xmm6\");\n                        __asm(\"pminub xmm5, xmm1\");\n                        __asm(\"pcmpeqb xmm5, xmm6\");\n                        __asm(\"pand xmm5, xmm2\");\n                        __asm(\"por xmm7, xmm3\");\n                        __asm(\"por xmm5, xmm4\");\n                        __asm(\"movdqu [r14+rsi], xmm7\");\n                        __asm(\"movdqu [r14+rsi+0x10], xmm5\");\n                        rsi += 0x20;\n                        if (rcx == rsi) break;\n                    }\n                    if (rbx != rcx) {\n                        if ((bl & 0x18) == 0) {\n                            goto label_401574;\n                        } else {\nlabel_401507:\n                            rsi = rcx;\n                            rdx += 0x18;\n                            rcx = rdx;\n                            rcx &= rbx;\n                            __asm(\"movdqa xmm0, [0x110d0]\");\n                            __asm(\"movdqa xmm1, [0x11020]\");\n                            __asm(\"movdqa xmm2, [0x11340]\");\n                            while (true) {\n                                __asm(\"movq xmm3, [rax+rsi]\");\n                                __asm(\"movdqa xmm4, xmm3\");\n                                __asm(\"paddb xmm4, xmm0\");\n                                __asm(\"movdqa xmm5, xmm4\");\n                                __asm(\"pmaxub xmm5, xmm1\");\n                                __asm(\"pcmpeqb xmm5, xmm4\");\n                                __asm(\"pandn xmm5, xmm2\");\n                                __asm(\"por xmm5, xmm3\");\n                                __asm(\"movq [r14+rsi], xmm5\");\n                                rsi += 8;\n                                if (rcx == rsi) break;\n                            }\n                        }\n                        goto label_40156f;\n                    }\n                } else {\n                    ecx = 0;\n                    goto label_401507;\n                }\n            } else {\n                ecx = 0;\n                rax = r15;\n                goto label_401574;\n            }\n        }\n    }\n    stack_0 = 0;\n    stack_8 = rbx;\n    stack_10 = r14;\n    stack_18 = rbx;\n    stack_20 = 0;\n    stack_28 = rbx;\n    rax = 0x3a0000003a;\n    stack_30 = rax;\n    stack_38 = 1;\n    stack_40 = 1;\n    rax = sub_3f11d0(rsp);\n    rax = r14;\n    rdx = rbx;\n    if (rdx > 15 /* unsigned */) {\n        rsi = -0x7f7f7f7f7f7f7f80;\n        rdi = 0x101010101010100;\n        r8 = rax + 7;\n        r8 &= -8;\n        rcx = r8;\n        rcx -= rax;\n        if (rcx != 0) {\n            r9d = 0;\n            while (true) {\n                if (*(uint8_t*)(rax + r9) == 0x68) {\n                    goto label_4016d4;\n                } else {\n                    r9++;\n                    if (rcx != r9) {\n                        continue;\n                    } else {\n                        goto label_40169f;\n                    }\n                    break;\n                }\n                break;\n            }\n        } else {\n            r10 = rdx - 16;\n            r9d = 0;\nlabel_401642:\n            r11 = 0x6868686868686868;\n            while (true) {\n                r15 = *(uint64_t*)(rax + r9);\n                r12 = r15;\n                r12 ^= r11;\n                r13 = rdi;\n                r13 -= r12;\n                r13 |= r15;\n                r15 = *(uint64_t*)(rax + r9 + 8);\n                r15 ^= r11;\n                r12 = rdi;\n                r12 -= r15;\n                r12 |= r15;\n                r13 &= rsi;\n                r13 &= r12;\n                if (r13 != rsi) {\n                    break;\n                } else {\n                    r9 += 16;\n                    if (r9 <= r10 /* unsigned */) {\n                        continue;\n                    } else {\n                        goto label_401688;\n                    }\n                    break;\n                }\n                break;\n            }\nlabel_4016ab:\n            r10 = rdx;\n            r10 -= r9;\n            if (r10 == 0) {\nlabel_401841:\n                ebp = 0;\n            } else {\n                r9 += rax;\n                r11d = 0;\n                while (true) {\n                    if (*(uint8_t*)(r9 + r11) == 0x68) {\n                        goto label_4016d4;\n                    } else {\n                        r11++;\n                        if (r10 != r11) {\n                            continue;\n                        } else {\n                            goto label_4016cf;\n                        }\n                        break;\n                    }\n                    break;\n                }\n            }\n        }\nlabel_401843:\n        if (rbx != 0) {\n            free(r14);\n        }\n        eax = ebp;\n        return rax;\n    } else {\n        if (rdx == 0) {\n            goto label_401841;\n        } else {\n            ecx = 0;\n            while (true) {\n                if (*(uint8_t*)(rax + rcx) == 0x68) {\n                    goto label_40172a;\n                } else {\n                    rcx++;\n                    if (rdx == rcx) break;\n                    continue;\n                }\n            }\n            goto label_401841;\n        }\n    }\nlabel_401688:\n    goto label_4016ab;\nlabel_40169f:\n    r10 = rdx - 16;\n    r9 = rcx;\n    if (rcx <= r10 /* unsigned */) {\n        goto label_401642;\n    }\n    goto label_4016ab;\nlabel_4016cf:\n    goto label_401841;\nlabel_4016d4:\n    if (r8 != rax) {\n        r9d = 0;\n        while (true) {\n            if (*(uint8_t*)(rax + r9) == 0x6d) {\n                goto label_4017a4;\n            } else {\n                r9++;\n                if (rcx != r9) {\n                    continue;\n                } else {\n                    goto label_40175f;\n                }\n                break;\n            }\n            break;\n        }\n    } else {\n        r10 = rdx - 16;\n        r9d = 0;\nlabel_4016e0:\n        r11 = 0x6d6d6d6d6d6d6d6d;\n        while (true) {\n            r15 = *(uint64_t*)(rax + r9);\n            r12 = r15;\n            r12 ^= r11;\n            r13 = rdi;\n            r13 -= r12;\n            r13 |= r15;\n            r15 = *(uint64_t*)(rax + r9 + 8);\n            r15 ^= r11;\n            r12 = rdi;\n            r12 -= r15;\n            r12 |= r15;\n            r13 &= rsi;\n            r13 &= r12;\n            if (r13 != rsi) {\n                break;\n            } else {\n                r9 += 16;\n                if (r9 <= r10 /* unsigned */) {\n                    continue;\n                } else {\n                    goto label_401728;\n                }\n                break;\n            }\n            break;\n        }\nlabel_40176f:\n        r10 = rdx;\n        r10 -= r9;\n        if (r10 == 0) {\n            goto label_401841;\n        } else {\n            r9 += rax;\n            r11d = 0;\n            while (true) {\n                if (*(uint8_t*)(r9 + r11) == 0x6d) {\n                    goto label_4017a4;\n                } else {\n                    r11++;\n                    if (r10 != r11) {\n                        continue;\n                    } else {\n                        goto label_40179f;\n                    }\n                    break;\n                }\n                break;\n            }\n        }\n    }\n    goto label_401843;\nlabel_401728:\n    goto label_40176f;\nlabel_40172a:\n    ecx = 0;\n    while (true) {\n        if (*(uint8_t*)(rax + rcx) == 0x6d) {\n            goto label_4017fa;\n        } else {\n            rcx++;\n            if (rdx == rcx) break;\n            continue;\n        }\n    }\n    goto label_401841;\nlabel_40175f:\n    r10 = rdx - 16;\n    r9 = rcx;\n    if (rcx <= r10 /* unsigned */) {\n        goto label_4016e0;\n    }\n    goto label_40176f;\nlabel_40179f:\n    goto label_401841;\nlabel_4017a4:\n    if (r8 != rax) {\n        r8d = 0;\n        while (true) {\n            if (*(uint8_t*)(rax + r8) == 0x73) {\n                goto label_401882;\n            } else {\n                r8++;\n                if (rcx != r8) {\n                    continue;\n                } else {\n                    goto label_40182f;\n                }\n                break;\n            }\n            break;\n        }\n    } else {\n        r8 = rdx - 16;\n        ecx = 0;\nlabel_4017af:\n        r9 = 0x7373737373737373;\n        while (true) {\n            r10 = *(uint64_t*)(rax + rcx);\n            r11 = r10;\n            r11 ^= r9;\n            r15 = rdi;\n            r15 -= r11;\n            r15 |= r10;\n            r10 = *(uint64_t*)(rax + rcx + 8);\n            r10 ^= r9;\n            r11 = rdi;\n            r11 -= r10;\n            r11 |= r10;\n            r15 &= rsi;\n            r15 &= r11;\n            if (r15 != rsi) {\n                break;\n            } else {\n                rcx += 16;\n                if (rcx <= r8 /* unsigned */) {\n                    continue;\n                } else {\n                    goto label_4017f8;\n                }\n                break;\n            }\n            break;\n        }\nlabel_40183c:\n        rdx -= rcx;\n        if (rdx != 0) {\n            rax += rcx;\n            ecx = 0;\n            while (true) {\n                if (*(uint8_t*)(rax + rcx) == 0x73) {\n                    goto label_401882;\n                } else {\n                    rcx++;\n                    ebp = 0;\n                    if (rdx != rcx) {\n                        continue;\n                    } else {\n                        goto label_401880;\n                    }\n                    break;\n                }\n                break;\n            }\n        } else {\n            goto label_401841;\n        }\n    }\n    goto label_401843;\nlabel_4017f8:\n    goto label_40183c;\nlabel_4017fa:\n    ecx = 0;\nlabel_40182f:\n    r8 = rdx - 16;\n    if (rcx <= r8 /* unsigned */) {\n        goto label_4017af;\n    }\n    goto label_40183c;\nlabel_401880:\n    goto label_401843;\nlabel_401882:\n    goto label_401843;\n}\n",
+    "signature": "int64_t sub_401410(int64_t rsi)",
+    "strings": [],
+    "structured": false
+  },
+  "summary": "Pseudo-C for sub_401410 (411 lines, partly unstructured).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "unstructured_flow",
+      "message": "42 gotos remain where the control flow isn't a simple if/loop"
+    },
+    {
+      "code": "inline_asm",
+      "message": "34 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x401410"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

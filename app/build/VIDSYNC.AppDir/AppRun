@@ -1,7 +1,0 @@
-#!/bin/sh
-# AppRun for VIDSYNC. Keep ffmpeg and ffprobe next to the binary.
-set -eu
-HERE="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
-export APPDIR="$HERE"
-export PATH="$HERE/usr/bin:${PATH:-/usr/bin:/bin}"
-exec "$HERE/usr/bin/vidsync" "$@"

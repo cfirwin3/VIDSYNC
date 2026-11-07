@@ -1,0 +1,330 @@
+{
+  "id": "ev_22f7991aeedc6a8e2a85c63c78784d306b2a9c56d35d664ab1b02389cf2390ca",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Open"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x148e",
+        "references": [],
+        "section": ".dynstr",
+        "text": "opendir"
+      },
+      {
+        "address": "0x14b9",
+        "references": [],
+        "section": ".dynstr",
+        "text": "open64"
+      },
+      {
+        "address": "0x1573",
+        "references": [],
+        "section": ".dynstr",
+        "text": "dlopen"
+      },
+      {
+        "address": "0x10c60",
+        "references": [],
+        "section": ".rodata",
+        "text": "TooManyOpenFiles"
+      },
+      {
+        "address": "0x11e40",
+        "references": [
+          {
+            "from": "0x3f0358",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Open"
+      },
+      {
+        "address": "0x12508",
+        "references": [
+          {
+            "from": "0x5c50",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "x_offsety_offsetblend_opEncoding (SIGIO)"
+      },
+      {
+        "address": "0x1fb6b",
+        "references": [],
+        "section": ".rodata",
+        "text": "Can't open this folder: "
+      },
+      {
+        "address": "0x21329",
+        "references": [
+          {
+            "from": "0x3df5f7",
+            "function": "sub_3db170"
+          }
+        ],
+        "section": ".rodata",
+        "text": "XOpenDisplay() failed!"
+      },
+      {
+        "address": "0x228f0",
+        "references": [],
+        "section": ".rodata",
+        "text": "x264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00"
+      },
+      {
+        "address": "0x110a2d",
+        "references": [
+          {
+            "from": "0x3edb35",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Open a video"
+      },
+      {
+        "address": "0x110a66",
+        "references": [
+          {
+            "from": "0x3eed6c",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Double-click to open"
+      },
+      {
+        "address": "0x110b97",
+        "references": [
+          {
+            "from": "0x3eac3d",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Open video"
+      },
+      {
+        "address": "0x1c4bb9",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni25E5\nopenbullet"
+      },
+      {
+        "address": "0x271d9f",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni25E5\nopenbullet"
+      },
+      {
+        "address": "0x2c91d4",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni25E5\nopenbullet"
+      },
+      {
+        "address": "0x31af62",
+        "references": [],
+        "section": ".rodata",
+        "text": "uni25E5\nopenbullet"
+      },
+      {
+        "address": "0x31df29",
+        "references": [
+          {
+            "from": "0x4328b8",
+            "function": "sub_4326f0"
+          },
+          {
+            "from": "0x4328e4",
+            "function": "sub_4326f0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "0000000000000000000000000000000000000000000000000000000000000000permission deniedconnection refusednetwork unreachableconnection abortednot connectedaddress in useaddress not availablenetwork downbroken pipeentity already existsoperation would blocknot a directoryis a directorydirectory not emptyread-only filesystem or storage mediumfilesystem loop or indirection limit (e.g. symlink loop)stale network file handleinvalid input parameterinvalid datawrite zeroseek on unseekable filequota exceededfile too largeresource busyexecutable file busycross-device link or renametoo many linksargument list too longoperation interruptedunsupportedunexpected end of fileout of memoryin progresstoo many open filesinput/output errorother erroruncategorized error"
+      },
+      {
+        "address": "0x32a07a",
+        "references": [
+          {
+            "from": "0x476ec5",
+            "function": "sub_472480"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Only one active query is allowed by OpenGL"
+      },
+      {
+        "address": "0x33420b",
+        "references": [
+          {
+            "from": "0x39e51d",
+            "function": "sub_39e020"
+          },
+          {
+            "from": "0x3a51f3",
+            "function": "sub_3a4520"
+          },
+          {
+            "from": "0x3a5222",
+            "function": "sub_3a4520"
+          },
+          {
+            "from": "0x3a5237",
+            "function": "sub_3a4520"
+          },
+          {
+            "from": "0x3aa879",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aa8ac",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aaa83",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aaad8",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aaaf9",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aab27",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aab4d",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aab73",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aac34",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aac55",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aac76",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aad61",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aad87",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aaf19",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aafd0",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aaff6",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ab1cb",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ab1f1",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ac26a",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ac7f4",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ac809",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3acdc9",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3aceca",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3acfc3",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3ad809",
+            "function": "sub_3ad780"
+          },
+          {
+            "from": "0x3ad8d8",
+            "function": "sub_3ad780"
+          },
+          {
+            "from": "0x3ad938",
+            "function": "sub_3ad780"
+          },
+          {
+            "from": "0x3ad983",
+            "function": "sub_3ad780"
+          }
+        ],
+        "section": ".rodata",
+        "text": "?ProjectionModel_Timegeometry() exceeded max drawcall size, clampingassertion failed: self.subframe.current_interlace_info.is_none()assertion failed: self.remaining_frames > 0#include <metal_stdlib>\n    using namespace metal;\n\n    struct Vertex\n    {\n        float2 position    [[attribute(0)]];\n        float2 texcoord    [[attribute(1)]];\n    };\n\n    struct RasterizerData\n    {\n        float4 position [[position]];\n        float2 uv [[user(locn1)]];\n    };\n\n    vertex RasterizerData vertexShader(Vertex v [[stage_in]])\n    {\n        RasterizerData out;\n\n        out.position = float4(v.position, 0, 1);\n        out.uv = v.texcoord;\n\n        return out;\n    }\n\n    fragment float4 fragmentShader(RasterizerData in [[stage_in]], texture2d<float> tex [[texture(0)]], sampler texSmplr [[sampler(0)]])\n    {\n        return tex.sample(texSmplr, in.uv);\n    }#version 100\n    attribute vec2 position;\n    attribute vec2 texcoord;\n\n    varying lowp vec2 uv;\n\n    void main() {\n        gl_Position = vec4(position, 0, 1);\n        uv = texcoord;\n    }#version 100\n    varying lowp vec2 uv;\n\n    uniform sampler2D Texture;\n\n    void main() {\n        gl_FragColor = texture2D(Texture, uv);\n    }assertion failed: THREAD_ID.is_some()assertion failed: THREAD_ID.unwrap() == CURRENT_THREAD_ID.with(|id| *id)New frame started with unpaired begin/end zones.macroquad does not support waking futures, please use coroutines, otherwise your pending future will block until the next frameEvent::resize_eventEvent::drawEvent::draw begin_frameEvent::draw end_frameEvent::updatesequence_numberwidthheightdelay_numdelay_dendispose_opFrameControlnum_framesnum_playsDownloadFailedAndroidAssetLoadingErrorIOSAssetNoSuchFileIOSAssetNoDataLimitSupport_non_exhaustiveFontErrorFileErrorShaderErrorImageErrorUnknownErrorLimitsmax_image_widthmax_allocDimensionErrorInsufficientMemorylimitssupportedPixelDimensionsUnspecifiedMeterExactPathExtensionUnknownA8L1La1Rgba1L2La2Rgba2L4La4Rgba4L8La8Rgba8L16Rgb16Rgba16Bgra8Rgb32FRgba32FCmyk8Backgroundshader_typeerror_messageLinkErrorFFINulErrorGlPipelineNothingChunkBeginChunkCompleteImageDataPartialChunkPngGifPnmTgaDdsBmpIcoHdrOpenExrQoiParameterIoErrorformatColorFormatGenericFeatureEncodingErrorunderlyingParameterErrorDimensionMismatchFailedAlreadyGenericNoMoreDataDecodingErrorLimitErrorNATIVE_DISPLAY already setlibGL.so.1glXGetFBConfigAttribglXGetClientStringglXQueryExtensionglXQueryVersionglXDestroyContextglXSwapBuffersglXQueryExtensionsStringglXCreateNewContextglXGetProcAddressglXGetProcAddressARBglXGetVisualFromFBConfiglibEGL.so.1eglCreatePbufferSurfaceeglCreatePixmapSurfaceeglCreateWindowSurfaceeglDestroyContexteglDestroySurfaceeglGetConfigAttribeglGetCurrentContexteglGetCurrentDisplayeglGetCurrentSurfaceeglGetErroreglGetProcAddresseglQueryContexteglQuerySurfaceeglSwapBufferseglBindTexImageeglReleaseTexImagelibxkbcommon.so.0libxkbcommon.so.0.0.0.0xkb_keysym_to_utf32libxkbcommon.so.0.0.0libXi.so.6XIQueryVersionBackend has not initialized NATIVE_DISPLAY yet.X11: Failed to create windowlibEGL.soGLX: failed to create windowGLX: ARB_create_context and ARB_create_context_profile requiredGLX extension not foundFailed to query GLX versionGLX version 1.3 is requiredGLX_ARB_multisampleGLX_EXT_swap_controlglXSwapIntervalEXTGLX_MESA_swap_controlglXSwapIntervalMESAGLX_ARB_create_contextGLX_ARB_create_context_profileglXCreateContextAttribsARBGLX: Failed to retrieve Visual for GLXFBConfigGLX: Failed to find a suitable GLXFBConfigNot implemented for X11\n_NET_WM_ICON_NAMEread_pixels not yet implemented for RenderBuffer(multisampled) texturesassertion failed: x_offset + width <= self.params.width as _assertion failed: y_offset + height <= self.params.height as _update_texture_part not yet implemented for RenderBuffer(multisampled) texturesMultisampling is only supported for render texturesincompatible TextureKind and TextureSource. Cubemaps require TextureSource::Array of 6 textures.Cubemaps require TextureSource::Array of 6 textures.Resize not yet implemented for RenderBuffer(multisampled) textureslibxkbcommon.soAlphaBlend without ColorBlendOpenGL ES 2a"
+      }
+    ],
+    "total": 19
+  },
+  "summary": "19 strings match \"Open\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 19,
+    "total": 19
+  },
+  "locations": [],
+  "links": []
+}

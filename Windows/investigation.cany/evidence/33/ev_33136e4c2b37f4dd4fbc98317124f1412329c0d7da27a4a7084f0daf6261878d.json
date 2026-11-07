@@ -1,0 +1,46 @@
+{
+  "id": "ev_33136e4c2b37f4dd4fbc98317124f1412329c0d7da27a4a7084f0daf6261878d",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_data_show",
+  "params": {
+    "address": "0x120e0",
+    "type": "f64"
+  },
+  "result": {
+    "address": "0x120e0",
+    "name": null,
+    "references_to": 4,
+    "section": ".rodata",
+    "type": "f64",
+    "value": "0.02"
+  },
+  "summary": "0x120e0 looks like f64.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "no_type_recovery",
+      "message": "the clean-room engine doesn't recover declared types; this reads the bytes and infers what they look like"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x120e0"
+    }
+  ],
+  "links": []
+}

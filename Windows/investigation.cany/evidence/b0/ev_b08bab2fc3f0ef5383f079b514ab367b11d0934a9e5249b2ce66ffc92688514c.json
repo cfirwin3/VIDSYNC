@@ -1,0 +1,64 @@
+{
+  "id": "ev_b08bab2fc3f0ef5383f079b514ab367b11d0934a9e5249b2ce66ffc92688514c",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "Files are played without their audio"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x3e9490",
+        "name": "sub_3e9490",
+        "why": [
+          "uses string \"Files are played without their audio track.\""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "Files are played without their audio",
+    "strings": [
+      {
+        "address": "0x110a39",
+        "references": [
+          {
+            "from": "0x3edb8a",
+            "function": "sub_3e9490",
+            "kind": "string"
+          }
+        ],
+        "text": "Files are played without their audio track."
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"Files are played without their audio\": 1 matching strings, 0 matching function names, 0 matching imports; 1 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3e9490"
+    }
+  ],
+  "links": []
+}

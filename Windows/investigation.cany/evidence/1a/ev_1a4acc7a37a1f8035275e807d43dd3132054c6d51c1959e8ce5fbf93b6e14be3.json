@@ -1,0 +1,64 @@
+{
+  "id": "ev_1a4acc7a37a1f8035275e807d43dd3132054c6d51c1959e8ce5fbf93b6e14be3",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "screenshot"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x3d1e10",
+        "name": "sub_3d1e10",
+        "why": [
+          "uses string \"--screenshot\""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "screenshot",
+    "strings": [
+      {
+        "address": "0x213fc",
+        "references": [
+          {
+            "from": "0x3d26f9",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          }
+        ],
+        "text": "--screenshot"
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"screenshot\": 1 matching strings, 0 matching function names, 0 matching imports; 1 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3d1e10"
+    }
+  ],
+  "links": []
+}

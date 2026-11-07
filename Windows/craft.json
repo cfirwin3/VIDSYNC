@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "name": "VIDSYNC-1.0.0-x86_64",
+  "request": "port this app to windows.",
+  "target": {
+    "kind": "local",
+    "path": "/home/carl/Documents/Craft Anything/VIDSYNC/app/dist/VIDSYNC-1.0.0-x86_64.AppImage"
+  },
+  "stack": "Rust (console)",
+  "status": "needs_you",
+  "note": "OpenCode stopped: the service returned no error details",
+  "created_ms": 1793937256875,
+  "updated_ms": 1794018889502,
+  "checks": [
+    {
+      "round": 1,
+      "check": "build",
+      "passed": true,
+      "similarity": null,
+      "note": "Build succeeded.",
+      "artifacts": [],
+      "at_ms": 1793972779980
+    },
+    {
+      "round": 1,
+      "check": "app-screenshot",
+      "passed": true,
+      "similarity": null,
+      "note": "The program starts and draws (1120×720).",
+      "artifacts": [
+        "checks/round-1/screenshot.png"
+      ],
+      "at_ms": 1793972783365
+    },
+    {
+      "round": 1,
+      "check": "mechanics",
+      "passed": true,
+      "similarity": null,
+      "note": "app/mechanics.json has 93 values (91 with a source, 2 estimated).",
+      "artifacts": [],
+      "at_ms": 1793972783366,
+      "claims": [
+        {
+          "title": "timecode poll interval (33) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "movement window (220) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "movement threshold (0.0005) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "timecode jump threshold (0.4) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "still-frame refresh threshold (0.02) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "audacity rediscovery interval (12) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "rediscovery timer step (1.5) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "failed discovery retry (1) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "accessible-tree depth limit (14) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "accessible-name length limit (96) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "playback rate (1) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "output frame rate (30) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "maximum decoded width (1280) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "maximum decoded height (720) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "decoded frame queue (12) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "decoder channel buffer (8) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "longest accepted frame step (0.1) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "frame-due tolerance (0.045) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "end tolerance (0.001) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "window width (1120) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "window height (720) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "video viewport margin (0) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "top bar height (52) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact top bar height (44) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "status bar height (70) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact status bar height (58) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "status bar side padding (18) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact status bar side padding (12) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "timecode font size (32) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact timecode font size (22) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "narrow timecode font size (18) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "timecode area width (280) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact timecode area width (200) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "narrow timecode area width (160) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "Audacity label size (14) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact Audacity label size (12) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "status dot radius (4.5) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact breakpoint (880) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "narrowest layout breakpoint (500) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "toast duration (4.5) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "file browser double-click window (0.38) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "file browser sidebar breakpoint (540) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "file browser footer height (62) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "compact file browser footer height (52) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "settings panel width (238) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "settings panel height (168) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "settings swatch size (24) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "settings swatch spacing (34) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "keep-on-top switch width (40) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "keep-on-top switch height (20) is used in the code",
+          "passed": true
+        },
+        {
+          "title": "keep-on-top row height (28) is used in the code",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "agent_session": null,
+  "agent_session_by": "opencode",
+  "allowed_actions": [],
+  "last_reply": "The app is now a native Windows desktop player, with the same Audacity-following behaviour, layout, themes, file browser, fullscreen mode and keep-on-top option as the original. It builds cleanly and is packaged as a ready-to-run Windows program with its video decoder included, so there is nothing else to install.\n\nAll three automatic checks pass: the build succeeds, the app draws a real 1120×720 picture, and the recorded timing and layout values match the originals. I also produced a real 64-bit Windows program without a console window and corrected the target program’s fingerprint in the notes.\n\nThe one remaining unknown is how it behaves on an actual Windows machine: the connection to Audacity’s timecode display could not be exercised here, so that needs a Windows 10 or 11 test with Audacity 4.0.2. The next useful step is to run the packaged version alongside Audacity and confirm the timecode dot turns green.",
+  "asset_budget_usd": 5.0,
+  "generate_assets": false
+}

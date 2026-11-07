@@ -1,0 +1,74 @@
+{
+  "id": "ev_11d9e711a155f967205983e8fd04ca2a9c64affbb9971a37ac51fa39e4ce262d",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x3f11d0"
+  },
+  "result": {
+    "calls": [
+      "bcmp",
+      "sub_3f11d0",
+      "sub_42a8b0"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x3f11d0",
+    "function": "sub_3f11d0",
+    "gotos": 13,
+    "inline_asm": 2,
+    "pseudo_code": "int64_t sub_3f11d0(int64_t rdi)\n{\n    if (*(uint8_t*)(rdi + 0x41) == 0) {\n        if (*(uint8_t*)(rdi + 0x40) == 0) {\n            *(uint8_t*)(rdi + 0x40) = 1;\n            rbx = rdi;\n            rax = sub_3f11d0();\n            if (rax == 0) {\nlabel_3f13f7:\n                rdi = rbx;\n                if (*(uint8_t*)(rbx + 0x41) == 1) {\nlabel_3f11e4:\n                    eax = 0;\n                    return rax;\n                } else {\nlabel_3f11f5:\n                    rax = *(uint64_t*)(rdi + 16);\n                    r10 = *(uint64_t*)(rdi + 0x20);\n                    r12 = *(uint64_t*)(rdi + 0x28);\n                    if (r12 < r10 /* unsigned */) {\nlabel_3f140d:\n                        *(uint8_t*)(rdi + 0x41) = 1;\n                        rcx = *(uint64_t*)(rdi);\n                        rdx = *(uint64_t*)(rdi + 8);\n                        rdx -= rcx;\n                        rax += rcx;\n                        return rax;\n                    } else {\n                        r11 = *(uint64_t*)(rdi + 0x18);\n                        r13 = -0x7f7f7f7f7f7f7f80;\n                        rcx = rax + r10;\n                        rdx = rdi + 0x30;\n                        stack_18 = rdx;\n                        edx = *(uint8_t*)(rdi + 0x38);\n                        stack_0 = rdx;\n                        rdx--;\n                        stack_20 = rdx;\n                        rbx = rax + r10;\n                        rbx += 7;\n                        r14 = rbx;\n                        r14 &= -8;\n                        r14 -= rcx;\n                        rcx = rax - 1;\n                        stack_40 = rcx;\n                        stack_10 = r10;\n                        stack_8 = r11;\n                        stack_38 = r14;\n                        while (true) {\n                            if (r12 > r11 /* unsigned */) {\n                                goto label_3f140d;\n                            } else {\n                                rdx = r12;\n                                rdx -= r10;\n                                rcx = stack_18;\n                                rsi = stack_20;\n                                ecx = *(uint8_t*)(rcx + rsi);\n                                r8 = rdx;\n                                r9 = rdx;\n                                if (rdx < r14 /* unsigned */) {\nlabel_3f12c1:\n                                    rsi = rdx;\n                                    rsi -= r8;\n                                    r12 += stack_40;\n                                    while (true) {\n                                        if (rsi == 0) {\n                                            goto label_3f12f0;\n                                        } else {\n                                            rsi--;\n                                            r12 = r12 - 1;\n                                            if (*(uint8_t*)(r12) == cl) break;\n                                            continue;\n                                        }\n                                    }\n                                    rsi += r8;\n                                    r12 = rsi;\nlabel_3f1366:\n                                    r12 += r10;\n                                    r14 = r12;\n                                    r14 -= stack_20;\n                                    if (r14 < 0 /* unsigned */) {\nlabel_3f1270:\n                                        *(uint64_t*)(rdi + 0x28) = r12;\n                                        r14 = stack_38;\n                                        if (r12 < r10 /* unsigned */) {\n                                            goto label_3f140d;\n                                        } else {\n                                            continue;\n                                        }\n                                    } else {\n                                        r15 = r14;\n                                        r15 += stack_0;\n                                        __asm(\"setb cl\");\n                                        __asm(\"seta dl\");\n                                        dl |= cl;\n                                        if (dl != 0) {\n                                            goto label_3f1270;\n                                        } else {\n                                            rcx = rax + r14;\n                                            stack_30 = rdi;\n                                            stack_28 = rax;\n                                            rax = bcmp(rcx, stack_18, stack_0);\n                                            r11 = stack_8;\n                                            r10 = stack_10;\n                                            rdi = stack_30;\n                                            ecx = eax;\n                                            rax = stack_28;\n                                            if (ecx != 0) {\n                                                goto label_3f1270;\n                                            } else {\n                                                break;\n                                            }\n                                        }\n                                    }\n                                } else {\n                                    esi = edx;\n                                    esi -= r14d;\n                                    esi &= 15;\n                                    r8 = rdx;\n                                    r8 -= rsi;\n                                    if (r8 < 0 /* unsigned */) {\n                                        goto label_3f143b;\n                                    } else {\n                                        r9 = r14;\n                                        goto label_3f12c1;\n                                    }\n                                }\n                            }\n                        }\n                        *(uint64_t*)(rdi + 0x28) = r14;\n                        rdx = *(uint64_t*)(rdi + 8);\n                        rdx -= r15;\n                        *(uint64_t*)(rdi + 8) = r14;\n                        rax += r15;\n                        return rax;\n                    }\n                }\n            } else {\n                if (rdx != 0) {\n                    return rax;\n                } else {\n                    goto label_3f13f7;\n                }\n            }\n        } else {\n            goto label_3f11f5;\n        }\n    } else {\n        goto label_3f11e4;\n    }\nlabel_3f12f0:\n    r10 = rcx;\n    rsi = &arg_1;\n    r10 *= rsi;\n    while (true) {\n        rsi = r8;\n        if (r8 <= r9 /* unsigned */) {\n            break;\n        } else {\n            r8 = rsi - 16;\n            r11 = *(uint64_t*)(rbx + rsi - 0x17);\n            r11 ^= r10;\n            r14 = rbp;\n            r14 -= r11;\n            r14 |= r11;\n            r11 = *(uint64_t*)(rbx + rsi - 15);\n            r11 ^= r10;\n            r15 = rbp;\n            r15 -= r11;\n            r15 |= r11;\n            r14 &= r13;\n            r14 &= r15;\n            if (r14 != r13) break;\n            continue;\n        }\n        break;\n    }\n    if (rsi > rdx /* unsigned */) {\n        sub_42a8b0(0, rsi, rdx, &data_5f02f0);\nlabel_3f143b:\n        sub_42a8b0(r8, rdx, rdx, &data_5f0308);\n        __debugbreak();\n    } else {\n        r10 = stack_10;\n        r11 = stack_8;\n        while (true) {\n            if (rsi == 0) {\n                goto label_3f1409;\n            } else {\n                r12 = rsi - 1;\n                rsi = r12;\n                if (*(uint8_t*)(rbx + rsi - 8) == cl) break;\n                continue;\n            }\n        }\n        goto label_3f1366;\n    }\nlabel_3f1409:\n    *(uint64_t*)(rdi + 0x28) = r10;\n    goto label_3f140d;\n}\n",
+    "signature": "int64_t sub_3f11d0(int64_t rdi)",
+    "strings": [],
+    "structured": false
+  },
+  "summary": "Pseudo-C for sub_3f11d0 (200 lines, partly unstructured).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "unstructured_flow",
+      "message": "13 gotos remain where the control flow isn't a simple if/loop"
+    },
+    {
+      "code": "inline_asm",
+      "message": "2 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3f11d0"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ev_b4ef25fd48767c5fb06255b5b34aa85e073da8d7a0fdb443d655a1f14bc5c8ac",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Keep on top"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x110b56",
+        "references": [
+          {
+            "from": "0x3ec4d8",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Keep on top"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Keep on top\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "ev_bc8cefffa32064ec5e816d15a70983342b1ccdf8d2e3960c031ebfac6b2594c7",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "Videos"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x3f62f0",
+        "name": "sub_3f62f0",
+        "why": [
+          "uses string \"Videos\""
+        ]
+      },
+      {
+        "address": "0x3f6790",
+        "name": "sub_3f6790",
+        "why": [
+          "uses string \"Videos\""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "Videos",
+    "strings": [
+      {
+        "address": "0x31cb92",
+        "references": [
+          {
+            "from": "0x3f6315",
+            "function": "sub_3f62f0",
+            "kind": "string"
+          },
+          {
+            "from": "0x3f6856",
+            "function": "sub_3f6790",
+            "kind": "string"
+          }
+        ],
+        "text": "Videos"
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"Videos\": 1 matching strings, 0 matching function names, 0 matching imports; 2 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3f62f0"
+    },
+    {
+      "kind": "address",
+      "value": "0x3f6790"
+    }
+  ],
+  "links": []
+}

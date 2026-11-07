@@ -1,0 +1,51 @@
+{
+  "id": "ev_889a7c88960d3db3eeeac64ea40a3ea5c8873667a770a1adcea6f5b0b002bb0b",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_callers_list",
+  "params": {
+    "function": "0x411c20"
+  },
+  "result": {
+    "address_taken": 0,
+    "callers": [
+      {
+        "caller": null,
+        "name": null,
+        "site": "0x3fe8f5"
+      }
+    ],
+    "entry": "0x411c20",
+    "function": "sub_411c20"
+  },
+  "summary": "sub_411c20 is called from 1 places.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "direct_calls_only",
+      "message": "callers that reach it through function pointers are not listed (see address_taken)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x411c20"
+    }
+  ],
+  "links": []
+}

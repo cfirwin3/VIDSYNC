@@ -1,0 +1,54 @@
+{
+  "id": "ev_1a84a7eb81f092465976d97d29a9ad13e340774b92e5c53e52983e5a5ede4c6e",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "00 h"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x213a3",
+        "references": [
+          {
+            "from": "0x3d3f40",
+            "function": "sub_3d1e10"
+          }
+        ],
+        "section": ".rodata",
+        "text": "100:00:04.000 held the picture; movement advanced "
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"00 h\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

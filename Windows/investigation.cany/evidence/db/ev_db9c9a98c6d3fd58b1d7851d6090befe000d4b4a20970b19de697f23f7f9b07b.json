@@ -1,0 +1,120 @@
+{
+  "id": "ev_db9c9a98c6d3fd58b1d7851d6090befe000d4b4a20970b19de697f23f7f9b07b",
+  "subject": {
+    "kind": "elf",
+    "sha256": "4c2cb950be053d8002703605bb9f19d7d9bee25c77940085666abb1294e641f2",
+    "name": "VIDSYNC-1.0.0-x86_64.AppImage"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "squashfs"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x88cc9",
+        "references": [
+          {
+            "from": "0x2c4bd",
+            "function": "sub_2be90"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Failed to open squashfs image\n"
+      },
+      {
+        "address": "0x890ab",
+        "references": [
+          {
+            "from": "0x2e5c8",
+            "function": "sub_2d8b9"
+          }
+        ],
+        "section": ".rodata",
+        "text": "squashfs-root/"
+      },
+      {
+        "address": "0x89493",
+        "references": [
+          {
+            "from": "0x2fe61",
+            "function": "sub_2fe45"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Can't open squashfs image"
+      },
+      {
+        "address": "0x894ad",
+        "references": [
+          {
+            "from": "0x2fefc",
+            "function": "sub_2fe81"
+          }
+        ],
+        "section": ".rodata",
+        "text": "This doesn't look like a squashfs image.\n"
+      },
+      {
+        "address": "0x894d7",
+        "references": [
+          {
+            "from": "0x2ffa1",
+            "function": "sub_2fe81"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Squashfs version %d.%d detected, only version"
+      },
+      {
+        "address": "0x89523",
+        "references": [
+          {
+            "from": "0x2ff4d",
+            "function": "sub_2fe81"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Squashfs image uses %s compression, this version supports only "
+      },
+      {
+        "address": "0x89566",
+        "references": [
+          {
+            "from": "0x3005a",
+            "function": "sub_2fe81"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Something went wrong trying to read the squashfs image.\n"
+      }
+    ],
+    "total": 7
+  },
+  "summary": "7 strings match \"squashfs\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 7,
+    "total": 7
+  },
+  "locations": [],
+  "links": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ev_c301ca05807916e3fbe4c2631836e79cc7116dfcf8c2e4797a13b53e9e17bc1d",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Fullscreen"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1a612",
+        "references": [
+          {
+            "from": "0x3abddb",
+            "function": "sub_3aa850"
+          },
+          {
+            "from": "0x3afece",
+            "function": "sub_3ad780"
+          },
+          {
+            "from": "0x480d46",
+            "function": "sub_480bc0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "_NET_WM_STATE_FULLSCREEN"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Fullscreen\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

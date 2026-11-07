@@ -1,0 +1,54 @@
+{
+  "id": "ev_5432252ceeb328da20d5bb84f599df82fd28de28f09ab380813502f57e0b4308",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 6,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Reading the first frame"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x110af3",
+        "references": [
+          {
+            "from": "0x3eb0e9",
+            "function": "sub_3e9490"
+          }
+        ],
+        "section": ".rodata",
+        "text": "Reading the first frame…"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Reading the first frame\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.3.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

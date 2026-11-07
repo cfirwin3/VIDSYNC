@@ -1,0 +1,103 @@
+{
+  "id": "ev_d27ade81219270dbf784fd68f7329e09f2103f6ce56f48f79c3df4ef5859100f",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_target_triage",
+  "params": {
+    "path": null
+  },
+  "result": {
+    "architecture": "x86_64",
+    "bits": 64,
+    "dotnet_arch": null,
+    "entry_point": "0x390b00",
+    "format": "elf",
+    "format_name": "ELF (Linux, Android, BSD)",
+    "kind": "executable",
+    "libraries": [
+      "libgcc_s.so.1",
+      "libm.so.6",
+      "libc.so.6"
+    ],
+    "next_steps": [
+      {
+        "tool": "core_overview_show",
+        "why": "a one-page summary: sections, imports, counts"
+      },
+      {
+        "tool": "native_functions_list",
+        "why": "every function we found"
+      },
+      {
+        "tool": "native_strings_find",
+        "why": "find text the program shows or uses"
+      },
+      {
+        "tool": "native_function_study",
+        "why": "a full dossier on one function (start with main or the entry point)"
+      },
+      {
+        "tool": "core_feature_find",
+        "why": "follow a word you see in the app to the code behind it"
+      },
+      {
+        "tool": "native_layout_show",
+        "why": "segments, symbols, relocations and hardening"
+      }
+    ],
+    "operating_system": "Linux",
+    "plain_english": "vidsync is a program for Linux, built for x86_64 (64-bit). It looks like it was made with Rust. Its internal names were removed (stripped), so most functions will have generated names.",
+    "recommended_toolsets": [
+      "core",
+      "native",
+      "formats"
+    ],
+    "stripped": true,
+    "symbol_table_stripped": true,
+    "toolchain_hints": [
+      {
+        "category": "language",
+        "evidence": "Rust standard-library paths or panic text in the data",
+        "id": "rust",
+        "label": "Rust",
+        "strength": "weak"
+      },
+      {
+        "category": "compiler",
+        "evidence": ".comment: GCC: (Ubuntu 15.2.0-16ubuntu1) 15.2.0; rustc version 1.99.1 (58cf8f9c3 2026-10-13); Linker: LLD 23.1.1 (/checkout/src/llvm-project/llvm 1b9c0d5ff9bbe7634aead059efe6b11a7eeba145)",
+        "id": "compiler",
+        "label": "GCC",
+        "strength": "strong"
+      }
+    ]
+  },
+  "summary": "vidsync is a program for Linux, built for x86_64 (64-bit). It looks like it was made with Rust. Its internal names were removed (stripped), so most functions will have generated names.",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "heuristic_hints",
+      "message": "toolchain and packer hints come from markers that can be faked or borrowed"
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x390b00",
+      "label": "entry point"
+    }
+  ],
+  "links": []
+}

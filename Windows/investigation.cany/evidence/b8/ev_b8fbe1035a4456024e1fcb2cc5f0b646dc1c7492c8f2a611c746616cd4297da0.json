@@ -1,0 +1,64 @@
+{
+  "id": "ev_b8fbe1035a4456024e1fcb2cc5f0b646dc1c7492c8f2a611c746616cd4297da0",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_evidence_browse",
+  "params": {
+    "show": {
+      "kind": "part",
+      "name": "callers"
+    },
+    "source": {
+      "evidence_id": "ev_cf1c04b7d80e3e0b4d1bad3a9266f4e5b242538baf8c36479804e66d78d6208d",
+      "kind": "saved"
+    }
+  },
+  "result": {
+    "coverage": {
+      "at_end": true,
+      "examined": 1,
+      "next_offset": null,
+      "status": "all-in-view",
+      "total": 1
+    },
+    "from_evidence": "ev_cf1c04b7d80e3e0b4d1bad3a9266f4e5b242538baf8c36479804e66d78d6208d",
+    "from_tool": "native_function_study",
+    "shown": {
+      "part": "callers",
+      "value": [
+        {
+          "caller": "0x3cc690",
+          "name": "sub_3cc690",
+          "site": "0x3d18fa"
+        },
+        {
+          "caller": "0x3cc690",
+          "name": "sub_3cc690",
+          "site": "0x3d1cc1"
+        }
+      ]
+    }
+  },
+  "summary": "Part of native_function_study evidence (all-in-view).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": [
+    "ev_cf1c04b7d80e3e0b4d1bad3a9266f4e5b242538baf8c36479804e66d78d6208d"
+  ]
+}

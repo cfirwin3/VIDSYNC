@@ -1,0 +1,741 @@
+{
+  "id": "ev_6099f2a417ef6b272320e9008dd863af462ee32c758d16c83ae54d51991c385c",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "position"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [
+      {
+        "address": "0x39e020",
+        "name": "sub_39e020",
+        "why": [
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \""
+        ]
+      },
+      {
+        "address": "0x3a4520",
+        "name": "sub_3a4520",
+        "why": [
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \""
+        ]
+      },
+      {
+        "address": "0x3aa850",
+        "name": "sub_3aa850",
+        "why": [
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \""
+        ]
+      },
+      {
+        "address": "0x3ad780",
+        "name": "sub_3ad780",
+        "why": [
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \""
+        ]
+      },
+      {
+        "address": "0x3d1e10",
+        "name": "sub_3d1e10",
+        "why": [
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \"",
+          "uses string \"?ProjectionModel_Timegeometry() exceeded max drawcall size, \""
+        ]
+      },
+      {
+        "address": "0x3e7780",
+        "name": "sub_3e7780",
+        "why": [
+          "uses string \"disposition\""
+        ]
+      },
+      {
+        "address": "0x3f6f40",
+        "name": "sub_3f6f40",
+        "why": [
+          "uses string \"position\""
+        ]
+      },
+      {
+        "address": "0x3ffa20",
+        "name": "sub_3ffa20",
+        "why": [
+          "uses string \"position\""
+        ]
+      },
+      {
+        "address": "0x404fc0",
+        "name": "sub_404fc0",
+        "why": [
+          "uses string \"transportinvalid seek to a negative or overflowing position\""
+        ]
+      },
+      {
+        "address": "0x411cc0",
+        "name": "sub_411cc0",
+        "why": [
+          "uses string \"-nul byte found in provided data at position: \""
+        ]
+      },
+      {
+        "address": "0x437e70",
+        "name": "sub_437e70",
+        "why": [
+          "uses string \"assertion failed: output_position <= output.len()deflate com\""
+        ]
+      },
+      {
+        "address": "0x460c80",
+        "name": "sub_460c80",
+        "why": [
+          "uses string \"position\""
+        ]
+      },
+      {
+        "address": "0x466f10",
+        "name": "sub_466f10",
+        "why": [
+          "uses string \"position\"",
+          "uses string \"\n#include <metal_stdlib>\n    using namespace metal;\n\n    str\"",
+          "uses string \"#version 100\n    attribute vec3 position;\n    attribute vec2\""
+        ]
+      },
+      {
+        "address": "0x472480",
+        "name": "sub_472480",
+        "why": [
+          "uses string \"\n#include <metal_stdlib>\n    using namespace metal;\n\n    str\"",
+          "uses string \"#version 100\nattribute vec3 position;\nattribute vec4 color0;\""
+        ]
+      },
+      {
+        "address": "0x490400",
+        "name": "sub_490400",
+        "why": [
+          "uses string \"-nul byte found in provided data at position: \""
+        ]
+      },
+      {
+        "address": "0x4a29b0",
+        "name": "sub_4a29b0",
+        "why": [
+          "uses string \"the dimension and position go over the frame boundaries\""
+        ]
+      }
+    ],
+    "imports": [],
+    "query": "position",
+    "strings": [
+      {
+        "address": "0x12450",
+        "references": [
+          {
+            "from": "0x3f73a9",
+            "function": "sub_3f6f40",
+            "kind": "string"
+          },
+          {
+            "from": "0x4010fd",
+            "function": "sub_3ffa20",
+            "kind": "string"
+          },
+          {
+            "from": "0x460cbc",
+            "function": "sub_460c80",
+            "kind": "string"
+          },
+          {
+            "from": "0x467cd6",
+            "function": "sub_466f10",
+            "kind": "string"
+          }
+        ],
+        "text": "position"
+      },
+      {
+        "address": "0x1ed89",
+        "references": [],
+        "text": "\r at position "
+      },
+      {
+        "address": "0x1fb85",
+        "references": [
+          {
+            "from": "0x411ce2",
+            "function": "sub_411cc0",
+            "kind": "string"
+          },
+          {
+            "from": "0x490423",
+            "function": "sub_490400",
+            "kind": "string"
+          }
+        ],
+        "text": "-nul byte found in provided data at position: "
+      },
+      {
+        "address": "0x214b0",
+        "references": [
+          {
+            "from": "0x3e87df",
+            "function": "sub_3e7780",
+            "kind": "string"
+          }
+        ],
+        "text": "disposition"
+      },
+      {
+        "address": "0x3280c0",
+        "references": [
+          {
+            "from": "0x43814e",
+            "function": "sub_437e70",
+            "kind": "string"
+          }
+        ],
+        "text": "assertion failed: output_position <= output.len()deflate compression error"
+      },
+      {
+        "address": "0x328bd7",
+        "references": [
+          {
+            "from": "0x474a14",
+            "function": "sub_472480",
+            "kind": "string"
+          }
+        ],
+        "text": "\n#include <metal_stdlib>\n    using namespace metal;\n\n    struct Uniforms\n    {\n        float4x4 Model;\n        float4x4 Projection;\n    };\n\n    struct Vertex\n    {\n        float3 position    [[attribute(0)]];\n        float2 texcoord    [[attribute(1)]];\n        float4 color0      [[attribute(2)]];\n    };\n\n    struct RasterizerData\n    {\n        float4 position [[position]];\n        float4 color [[user(locn0)]];\n        float2 uv [[user(locn1)]];\n    };\n\n    vertex RasterizerData vertexShader(Vertex v [[stage_in]], constant Uniforms& uniforms [[buffer(0)]])\n    {\n        RasterizerData out;\n\n        out.position = uniforms.Model * uniforms.Projection * float4(v.position, 1);\n        out.color = v.color0 / 255.0;\n        out.uv = v.texcoord;\n\n        return out;\n    }\n\n    fragment float4 fragmentShader(RasterizerData in [[stage_in]], texture2d<float> tex [[texture(0)]], sampler texSmplr [[sampler(0)]])\n    {\n        return in.color * tex.sample(texSmplr, in.uv);\n    }"
+      },
+      {
+        "address": "0x328fac",
+        "references": [
+          {
+            "from": "0x474a05",
+            "function": "sub_472480",
+            "kind": "string"
+          }
+        ],
+        "text": "#version 100\nattribute vec3 position;\nattribute vec4 color0;\nattribute vec2 texcoord;\n\nvarying lowp vec2 uv;\nvarying lowp vec2 pos;\nvarying lowp vec4 color;\n\nuniform mat4 Model;\nuniform mat4 Projection;\n\nvoid main() {\n    gl_Position = Projection * Model * vec4(position, 1);\n    uv = texcoord;\n    color = color0 / 255.0;\n}\n"
+      },
+      {
+        "address": "0x329a57",
+        "references": [
+          {
+            "from": "0x4675a3",
+            "function": "sub_466f10",
+            "kind": "string"
+          }
+        ],
+        "text": "\n#include <metal_stdlib>\n    using namespace metal;\n\n    struct Uniforms\n    {\n        float4x4 Model;\n        float4x4 Projection;\n    };\n\n    struct Vertex\n    {\n        float3 position    [[attribute(0)]];\n        float2 texcoord    [[attribute(1)]];\n        float4 color0      [[attribute(2)]];\n    };\n\n    struct RasterizerData\n    {\n        float4 position [[position]];\n        float4 color [[user(locn0)]];\n        float2 uv [[user(locn1)]];\n    };\n\n    vertex RasterizerData vertexShader(Vertex v [[stage_in]], constant Uniforms& uniforms [[buffer(0)]])\n    {\n        RasterizerData out;\n\n        out.position = uniforms.Model * uniforms.Projection * float4(v.position, 1);\n        out.color = v.color0 / 255.0;\n        out.uv = v.texcoord;\n\n        return out;\n    }\n\n    fragment float4 fragmentShader(RasterizerData in [[stage_in]], texture2d<float> tex [[texture(0)]], sampler texSmplr [[sampler(0)]])\n    {\n        return in.color * tex.sample(texSmplr, in.uv);\n    }\n    "
+      },
+      {
+        "address": "0x329e31",
+        "references": [
+          {
+            "from": "0x467595",
+            "function": "sub_466f10",
+            "kind": "string"
+          }
+        ],
+        "text": "#version 100\n    attribute vec3 position;\n    attribute vec2 texcoord;\n    attribute vec4 color0;\n    attribute vec4 normal;\n\n    varying lowp vec2 uv;\n    varying lowp vec4 color;\n\n    uniform mat4 Model;\n    uniform mat4 Projection;\n\n    void main() {\n        gl_Position = Projection * Model * vec4(position, 1);\n        color = color0 / 255.0;\n        uv = texcoord;\n    }"
+      },
+      {
+        "address": "0x33420b",
+        "references": [
+          {
+            "from": "0x39e51d",
+            "function": "sub_39e020",
+            "kind": "string"
+          },
+          {
+            "from": "0x3a51f3",
+            "function": "sub_3a4520",
+            "kind": "string"
+          },
+          {
+            "from": "0x3a5222",
+            "function": "sub_3a4520",
+            "kind": "string"
+          },
+          {
+            "from": "0x3a5237",
+            "function": "sub_3a4520",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aa879",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aa8ac",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aaa83",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aaad8",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aaaf9",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aab27",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aab4d",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aab73",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aac34",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aac55",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aac76",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aad61",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aad87",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aaf19",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aafd0",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aaff6",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ab1cb",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ab1f1",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ac26a",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ac7f4",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ac809",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3acdc9",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3aceca",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3acfc3",
+            "function": "sub_3aa850",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ad809",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ad8d8",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ad938",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ad983",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ad9ce",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ada19",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adafd",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adb48",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adb93",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adcc0",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3add11",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3add4c",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adfbd",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adfc8",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3adfeb",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae049",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae054",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae128",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae7a0",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae7bb",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae7dc",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae7fe",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae81f",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae849",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3ae86b",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b03dd",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b059b",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b0613",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b0634",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b065e",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3b0691",
+            "function": "sub_3ad780",
+            "kind": "string"
+          },
+          {
+            "from": "0x3d1f09",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          },
+          {
+            "from": "0x3d1f3f",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          },
+          {
+            "from": "0x3d206b",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          },
+          {
+            "from": "0x3d2091",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          },
+          {
+            "from": "0x3d7749",
+            "function": "sub_3d1e10",
+            "kind": "string"
+          }
+        ],
+        "text": "?ProjectionModel_Timegeometry() exceeded max drawcall size, clampingassertion failed: self.subframe.current_interlace_info.is_none()assertion failed: self.remaining_frames > 0#include <metal_stdlib>\n    using namespace metal;\n\n    struct Vertex\n    {\n        float2 position    [[attribute(0)]];\n        float2 texcoord    [[attribute(1)]];\n    };\n\n    struct RasterizerData\n    {\n        float4 position [[position]];\n        float2 uv [[user(locn1)]];\n    };\n\n    vertex RasterizerData vertexShader(Vertex v [[stage_in]])\n    {\n        RasterizerData out;\n\n        out.position = float4(v.position, 0, 1);\n        out.uv = v.texcoord;\n\n        return out;\n    }\n\n    fragment float4 fragmentShader(RasterizerData in [[stage_in]], texture2d<float> tex [[texture(0)]], sampler texSmplr [[sampler(0)]])\n    {\n        return tex.sample(texSmplr, in.uv);\n    }#version 100\n    attribute vec2 position;\n    attribute vec2 texcoord;\n\n    varying lowp vec2 uv;\n\n    void main() {\n        gl_Position = vec4(position, 0, 1);\n        uv = texcoord;\n    }#version 100\n    varying lowp vec2 uv;\n\n    uniform sampler2D Texture;\n\n    void main() {\n        gl_FragColor = texture2D(Texture, uv);\n    }assertion failed: THREAD_ID.is_some()assertion failed: THREAD_ID.unwrap() == CURRENT_THREAD_ID.with(|id| *id)New frame started with unpaired begin/end zones.macroquad does not support waking futures, please use coroutines, otherwise your pending future will block until the next frameEvent::resize_eventEvent::drawEvent::draw begin_frameEvent::draw end_frameEvent::updatesequence_numberwidthheightdelay_numdelay_dendispose_opFrameControlnum_framesnum_playsDownloadFailedAndroidAssetLoadingErrorIOSAssetNoSuchFileIOSAssetNoDataLimitSupport_non_exhaustiveFontErrorFileErrorShaderErrorImageErrorUnknownErrorLimitsmax_image_widthmax_allocDimensionErrorInsufficientMemorylimitssupportedPixelDimensionsUnspecifiedMeterExactPathExtensionUnknownA8L1La1Rgba1L2La2Rgba2L4La4Rgba4L8La8Rgba8L16Rgb16Rgba16Bgra8Rgb32FRgba32FCmyk8Backgroundshader_typeerror_messageLinkErrorFFINulErrorGlPipelineNothingChunkBeginChunkCompleteImageDataPartialChunkPngGifPnmTgaDdsBmpIcoHdrOpenExrQoiParameterIoErrorformatColorFormatGenericFeatureEncodingErrorunderlyingParameterErrorDimensionMismatchFailedAlreadyGenericNoMoreDataDecodingErrorLimitErrorNATIVE_DISPLAY already setlibGL.so.1glXGetFBConfigAttribglXGetClientStringglXQueryExtensionglXQueryVersionglXDestroyContextglXSwapBuffersglXQueryExtensionsStringglXCreateNewContextglXGetProcAddressglXGetProcAddressARBglXGetVisualFromFBConfiglibEGL.so.1eglCreatePbufferSurfaceeglCreatePixmapSurfaceeglCreateWindowSurfaceeglDestroyContexteglDestroySurfaceeglGetConfigAttribeglGetCurrentContexteglGetCurrentDisplayeglGetCurrentSurfaceeglGetErroreglGetProcAddresseglQueryContexteglQuerySurfaceeglSwapBufferseglBindTexImageeglReleaseTexImagelibxkbcommon.so.0libxkbcommon.so.0.0.0.0xkb_keysym_to_utf32libxkbcommon.so.0.0.0libXi.so.6XIQueryVersionBackend has not initialized NATIVE_DISPLAY yet.X11: Failed to create windowlibEGL.soGLX: failed to create windowGLX: ARB_create_context and ARB_create_context_profile requiredGLX extension not foundFailed to query GLX versionGLX version 1.3 is requiredGLX_ARB_multisampleGLX_EXT_swap_controlglXSwapIntervalEXTGLX_MESA_swap_controlglXSwapIntervalMESAGLX_ARB_create_contextGLX_ARB_create_context_profileglXCreateContextAttribsARBGLX: Failed to retrieve Visual for GLXFBConfigGLX: Failed to find a suitable GLXFBConfigNot implemented for X11\n_NET_WM_ICON_NAMEread_pixels not yet implemented for RenderBuffer(multisampled) texturesassertion failed: x_offset + width <= self.params.width as _assertion failed: y_offset + height <= self.params.height as _update_texture_part not yet implemented for RenderBuffer(multisampled) texturesMultisampling is only supported for render texturesincompatible TextureKind and TextureSource. Cubemaps require TextureSource::Array of 6 textures.Cubemaps require TextureSource::Array of 6 textures.Resize not yet implemented for RenderBuffer(multisampled) textureslibxkbcommon.soAlphaBlend without ColorBlendOpenGL ES 2a"
+      },
+      {
+        "address": "0x33615e",
+        "references": [
+          {
+            "from": "0x4a2af4",
+            "function": "sub_4a29b0",
+            "kind": "string"
+          }
+        ],
+        "text": "the dimension and position go over the frame boundaries"
+      },
+      {
+        "address": "0x33dd84",
+        "references": [
+          {
+            "from": "0x40501a",
+            "function": "sub_404fc0",
+            "kind": "string"
+          }
+        ],
+        "text": "transportinvalid seek to a negative or overflowing position"
+      }
+    ],
+    "truncated": false
+  },
+  "summary": "\"position\": 12 matching strings, 0 matching function names, 0 matching imports; 16 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x39e020"
+    },
+    {
+      "kind": "address",
+      "value": "0x3a4520"
+    },
+    {
+      "kind": "address",
+      "value": "0x3aa850"
+    },
+    {
+      "kind": "address",
+      "value": "0x3ad780"
+    },
+    {
+      "kind": "address",
+      "value": "0x3d1e10"
+    },
+    {
+      "kind": "address",
+      "value": "0x3e7780"
+    },
+    {
+      "kind": "address",
+      "value": "0x3f6f40"
+    },
+    {
+      "kind": "address",
+      "value": "0x3ffa20"
+    },
+    {
+      "kind": "address",
+      "value": "0x404fc0"
+    },
+    {
+      "kind": "address",
+      "value": "0x411cc0"
+    },
+    {
+      "kind": "address",
+      "value": "0x437e70"
+    },
+    {
+      "kind": "address",
+      "value": "0x460c80"
+    },
+    {
+      "kind": "address",
+      "value": "0x466f10"
+    },
+    {
+      "kind": "address",
+      "value": "0x472480"
+    },
+    {
+      "kind": "address",
+      "value": "0x490400"
+    },
+    {
+      "kind": "address",
+      "value": "0x4a29b0"
+    }
+  ],
+  "links": []
+}

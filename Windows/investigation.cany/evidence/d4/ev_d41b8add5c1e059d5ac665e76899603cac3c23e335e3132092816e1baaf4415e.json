@@ -1,0 +1,49 @@
+{
+  "id": "ev_d41b8add5c1e059d5ac665e76899603cac3c23e335e3132092816e1baaf4415e",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "scale="
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1c938",
+        "references": [],
+        "section": ".rodata",
+        "text": "scale="
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"scale=\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

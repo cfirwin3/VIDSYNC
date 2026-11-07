@@ -1,0 +1,44 @@
+{
+  "id": "ev_a20db7b69d7691135138a5b22c8e1b5efd00443a779c07e39c4d0d714ed01957",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "timecode live"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [],
+    "imports": [],
+    "query": "timecode live",
+    "strings": [],
+    "truncated": false
+  },
+  "summary": "\"timecode live\": 0 matching strings, 0 matching function names, 0 matching imports; 0 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "no_match",
+      "message": "nothing matched; the text may be built at run time, encrypted, or come from a resource file (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

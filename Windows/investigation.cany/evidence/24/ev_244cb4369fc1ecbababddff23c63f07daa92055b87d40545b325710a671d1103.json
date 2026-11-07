@@ -1,0 +1,74 @@
+{
+  "id": "ev_244cb4369fc1ecbababddff23c63f07daa92055b87d40545b325710a671d1103",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_evidence_browse",
+  "params": {
+    "show": {
+      "kind": "part",
+      "name": "callers"
+    },
+    "source": {
+      "evidence_id": "ev_ae0dc184f84e3b9fb89a2112c3832f9f9470328e9bc8c3761170a31646886607",
+      "kind": "saved"
+    }
+  },
+  "result": {
+    "coverage": {
+      "at_end": true,
+      "examined": 1,
+      "next_offset": null,
+      "status": "all-in-view",
+      "total": 1
+    },
+    "from_evidence": "ev_ae0dc184f84e3b9fb89a2112c3832f9f9470328e9bc8c3761170a31646886607",
+    "from_tool": "native_function_study",
+    "shown": {
+      "part": "callers",
+      "value": [
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d454e"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d6d45"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d7064"
+        },
+        {
+          "caller": "0x3f0820",
+          "name": "sub_3f0820",
+          "site": "0x3f0fb8"
+        }
+      ]
+    }
+  },
+  "summary": "Part of native_function_study evidence (all-in-view).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": [
+    "ev_ae0dc184f84e3b9fb89a2112c3832f9f9470328e9bc8c3761170a31646886607"
+  ]
+}

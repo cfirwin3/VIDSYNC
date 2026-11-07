@@ -1,0 +1,54 @@
+{
+  "id": "ev_5c2630ddd70e7e44b40c80ad8fc36e04512a6bfe2f20d1199daa0a587d975736",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "XDG_CONFIG_HOME"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x31cac3",
+        "references": [
+          {
+            "from": "0x3f3cb1",
+            "function": "sub_3f3ca0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "XDG_CONFIG_HOME"
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"XDG_CONFIG_HOME\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

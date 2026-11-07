@@ -1,0 +1,85 @@
+{
+  "id": "ev_8567e6e217a3d3ad463eedf70abce36a5e7a0c794931f1d605afef272efa1edc",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x3f6790"
+  },
+  "result": {
+    "calls": [
+      "*(uint64_t*)(rax + 0x17",
+      "free",
+      "malloc",
+      "memcpy",
+      "sub_3e7450",
+      "sub_3f6640",
+      "sub_40f885",
+      "sub_40f898",
+      "sub_4b6600",
+      "sub_4d9210"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x3f6790",
+    "function": "sub_3f6790",
+    "gotos": 9,
+    "inline_asm": 32,
+    "pseudo_code": "int64_t sub_3f6790(int64_t rdi)\n{\n    rbx = rdi;\n    sub_3f6640(&stack_40);\n    rax = malloc(0x30);\n    if (rax == 0) {\n        sub_40f898(8, 0x30);\n        __halt(); /* stops here */\n    } else {\n        r15 = rax;\n        stack_38 = rbx;\n        rax = malloc(4);\n        if (rax == 0) {\n            sub_40f885(1, 4);\n            __halt(); /* stops here */\n        } else {\n            r13 = rax;\n            *(uint32_t*)(rax) = 0x656d6f48;\n            r14 = stack_48;\n            r12 = stack_50;\n            if (r12 == 0) {\nlabel_3f6821:\n                *(uint64_t*)(r15) = 4;\n                *(uint64_t*)(r15 + 8) = r13;\n                *(uint64_t*)(r15 + 16) = 4;\n                *(uint64_t*)(r15 + 0x18) = r12;\n                *(uint64_t*)(r15 + 0x20) = rbp;\n                *(uint64_t*)(r15 + 0x28) = r12;\n                stack_0 = 1;\n                stack_8 = r15;\n                stack_10 = 1;\n                sub_4d9210(&stack_18, r14, r12, \"Videos\", 6);\n                r13 = stack_20;\n                sub_4b6600(&stack_58, r13, stack_28);\n                rbp = &stack_70;\n                if (stack_58 != 2) {\n                    eax = 0xf000;\n                    eax &= stack_90;\n                    if (eax != 0x4000) {\nlabel_3f6966:\n                        ebx = 1;\n                        if (stack_18 != 0) {\n                            free(r13);\n                        }\nlabel_3f697c:\n                        sub_4d9210(&stack_18, r14, r12, \"Downloads\", 9);\n                        r13 = stack_20;\n                        sub_4b6600(&stack_58, r13, stack_28);\n                        if (stack_58 != 2) {\n                            eax = 0xf000;\n                            eax &= stack_90;\n                            if (eax != 0x4000) {\nlabel_3f6aa0:\n                                if (stack_18 != 0) {\n                                    free(r13);\n                                }\nlabel_3f6ab1:\n                                sub_4d9210(&stack_18, r14, r12, \"Documents\", 9);\n                                r13 = stack_20;\n                                sub_4b6600(&stack_58, r13, stack_28);\n                                if (stack_58 != 2) {\n                                    eax = 0xf000;\n                                    eax &= stack_90;\n                                    if (eax != 0x4000) {\nlabel_3f6bce:\n                                        if (stack_18 != 0) {\n                                            free(r13);\n                                        }\nlabel_3f6bdf:\n                                        rax = malloc(8);\n                                        if (rax == 0) {\n                                            sub_40f885(1, 8);\n                                            __halt(); /* stops here */\n                                        } else {\n                                            r12 = rax;\n                                            rax = 0x72657475706d6f43;\n                                            *(uint64_t*)(r12) = rax;\n                                            rax = malloc(1);\n                                            if (rax == 0) {\n                                                sub_40f885(1, 1);\n                                                __halt(); /* stops here */\n                                            } else {\n                                                *(uint8_t*)(rax) = 0x2f;\n                                                stack_58 = 8;\n                                                stack_60 = r12;\n                                                stack_68 = 8;\n                                                stack_70 = 1;\n                                                stack_78 = rax;\n                                                stack_80 = 1;\n                                                if (rbx == stack_0) {\n                                                    sub_3e7450(rsp);\n                                                    r15 = stack_8;\n                                                }\n                                                rax = rbx + rbx * 2;\n                                                eax <<= 4;\n                                                __asm(\"movups xmm0, [rsp+0x58]\");\n                                                __asm(\"movups xmm1, [rsp+0x68]\");\n                                                __asm(\"movups xmm2, [rsp+0x78]\");\n                                                __asm(\"movups [r15+rax+0x20], xmm2\");\n                                                __asm(\"movups [r15+rax+0x10], xmm1\");\n                                                __asm(\"movups [r15+rax], xmm0\");\n                                                rbx++;\n                                                stack_10 = rbx;\n                                                rax = stack_38;\n                                                *(uint64_t*)(rax + 16) = rbx;\n                                                __asm(\"movups xmm0, [rsp]\");\n                                                __asm(\"movups [rax], xmm0\");\n                                                if (stack_40 == 0) {\n                                                    return rax;\n                                                } else {\n                                                    rdi = r14;\n                                                    return free(); /* tail call */\n                                                }\n                                            }\n                                        }\n                                    } else {\n                                        r12 = r14;\n                                        r14 = rbp;\n                                        rax = malloc(9);\n                                        if (rax == 0) {\nlabel_3f6d16:\n                                            sub_40f885(1, rbp);\n                                            __halt(); /* stops here */\n                                        } else {\n                                            rcx = 0x746e656d75636f44;\n                                            *(uint64_t*)(rax) = rcx;\n                                            *(uint8_t*)(rax + 8) = 0x73;\n                                            stack_58 = 9;\n                                            stack_60 = rax;\n                                            stack_68 = 9;\n                                            rax = stack_28;\n                                            *(uint64_t*)(r14 + 16) = rax;\n                                            __asm(\"movups xmm0, [rsp+0x18]\");\n                                            __asm(\"movups [r14], xmm0\");\n                                            r14 = r12;\n                                            if (rbx == stack_0) {\n                                                sub_3e7450(rsp);\n                                                r15 = stack_8;\n                                            }\n                                            rax = rbx + rbx * 2;\n                                            eax <<= 4;\n                                            __asm(\"movups xmm0, [rsp+0x58]\");\n                                            __asm(\"movups xmm1, [rsp+0x68]\");\n                                            __asm(\"movups xmm2, [rsp+0x78]\");\n                                            __asm(\"movups [r15+rax+0x20], xmm2\");\n                                            __asm(\"movups [r15+rax+0x10], xmm1\");\n                                            __asm(\"movups [r15+rax], xmm0\");\n                                            rbx++;\n                                            stack_10 = rbx;\n                                            goto label_3f6bdf;\n                                        }\n                                    }\n                                } else {\n                                    rax = stack_60;\n                                    ecx = eax;\n                                    ecx &= 3;\n                                    edx = rcx - 2;\n                                    if (edx >= 2 /* unsigned */) {\n                                        if (rcx != 0) {\n                                            (**(uint64_t*)(rax + 0x17))(rax - 1);\n                                        }\n                                    }\n                                    goto label_3f6bce;\n                                }\n                            } else {\n                                stack_30 = r14;\n                                r14 = rbp;\n                                rax = malloc(9);\n                                if (rax == 0) {\n                                    goto label_3f6d16;\n                                } else {\n                                    rcx = 0x64616f6c6e776f44;\n                                    *(uint64_t*)(rax) = rcx;\n                                    *(uint8_t*)(rax + 8) = 0x73;\n                                    stack_58 = 9;\n                                    stack_60 = rax;\n                                    stack_68 = 9;\n                                    rax = stack_28;\n                                    *(uint64_t*)(r14 + 16) = rax;\n                                    __asm(\"movups xmm0, [rsp+0x18]\");\n                                    __asm(\"movups [r14], xmm0\");\n                                    r14 = stack_30;\n                                    if (rbx == stack_0) {\n                                        sub_3e7450(rsp);\n                                        r15 = stack_8;\n                                    }\n                                    rax = rbx + rbx * 2;\n                                    eax <<= 4;\n                                    __asm(\"movups xmm0, [rsp+0x58]\");\n                                    __asm(\"movups xmm1, [rsp+0x68]\");\n                                    __asm(\"movups xmm2, [rsp+0x78]\");\n                                    __asm(\"movups [r15+rax+0x20], xmm2\");\n                                    __asm(\"movups [r15+rax+0x10], xmm1\");\n                                    __asm(\"movups [r15+rax], xmm0\");\n                                    rbx++;\n                                    stack_10 = rbx;\n                                    goto label_3f6ab1;\n                                }\n                            }\n                        } else {\n                            rax = stack_60;\n                            ecx = eax;\n                            ecx &= 3;\n                            edx = rcx - 2;\n                            if (edx >= 2 /* unsigned */) {\n                                if (rcx != 0) {\n                                    (**(uint64_t*)(rax + 0x17))(rax - 1);\n                                }\n                            }\n                            goto label_3f6aa0;\n                        }\n                    } else {\n                        rbx = rbp;\n                        rax = malloc(6);\n                        if (rax == 0) {\n                            goto label_3f6d16;\n                        } else {\n                            *(uint16_t*)(rax + 4) = 0x736f;\n                            *(uint32_t*)(rax) = 0x65646956;\n                            stack_58 = 6;\n                            stack_60 = rax;\n                            stack_68 = 6;\n                            rax = stack_28;\n                            *(uint64_t*)(rbx + 16) = rax;\n                            __asm(\"movups xmm0, [rsp+0x18]\");\n                            __asm(\"movups [rbx], xmm0\");\n                            sub_3e7450(rsp);\n                            r15 = stack_8;\n                            __asm(\"movups xmm0, [rsp+0x58]\");\n                            __asm(\"movups xmm1, [rsp+0x68]\");\n                            __asm(\"movups xmm2, [rsp+0x78]\");\n                            __asm(\"movups [r15+0x50], xmm2\");\n                            __asm(\"movups [r15+0x40], xmm1\");\n                            __asm(\"movups [r15+0x30], xmm0\");\n                            stack_10 = 2;\n                            ebx = 2;\n                            goto label_3f697c;\n                        }\n                    }\n                } else {\n                    rax = stack_60;\n                    ecx = eax;\n                    ecx &= 3;\n                    edx = rcx - 2;\n                    if (edx >= 2 /* unsigned */) {\n                        if (rcx != 0) {\n                            (**(uint64_t*)(rax + 0x17))(rax - 1);\n                        }\n                    }\n                    goto label_3f6966;\n                }\n            } else {\n                rax = malloc(r12);\n                if (rax == 0) {\n                    sub_40f885(1, r12);\n                    __halt(); /* stops here */\n                } else {\n                    memcpy(rax, r14, r12);\n                    goto label_3f6821;\n                }\n            }\n        }\n    }\n}\n",
+    "signature": "int64_t sub_3f6790(int64_t rdi)",
+    "strings": [
+      "Videos",
+      "Downloads",
+      "Documents"
+    ],
+    "structured": false
+  },
+  "summary": "Pseudo-C for sub_3f6790 (264 lines, partly unstructured).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "unstructured_flow",
+      "message": "9 gotos remain where the control flow isn't a simple if/loop"
+    },
+    {
+      "code": "inline_asm",
+      "message": "32 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3f6790"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

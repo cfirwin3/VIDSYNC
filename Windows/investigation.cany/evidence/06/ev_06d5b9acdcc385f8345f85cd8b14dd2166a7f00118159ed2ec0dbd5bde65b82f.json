@@ -1,0 +1,71 @@
+{
+  "id": "ev_06d5b9acdcc385f8345f85cd8b14dd2166a7f00118159ed2ec0dbd5bde65b82f",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "ffprobe"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1c8ec",
+        "references": [],
+        "section": ".rodata",
+        "text": "Could not start ffprobe ("
+      },
+      {
+        "address": "0x21474",
+        "references": [
+          {
+            "from": "0x3e859c",
+            "function": "sub_3e7780"
+          }
+        ],
+        "section": ".rodata",
+        "text": "d ffprobe output"
+      },
+      {
+        "address": "0x31cb19",
+        "references": [
+          {
+            "from": "0x3e7810",
+            "function": "sub_3e7780"
+          }
+        ],
+        "section": ".rodata",
+        "text": "ffprobe"
+      }
+    ],
+    "total": 3
+  },
+  "summary": "3 strings match \"ffprobe\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [],
+  "links": []
+}

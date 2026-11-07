@@ -1,0 +1,140 @@
+{
+  "id": "ev_7497ef3b66171b1fa22cafc71fdaad2bf54cde41a1b9912734b1c7f767b93875",
+  "subject": {
+    "kind": "elf",
+    "sha256": "4c2cb950be053d8002703605bb9f19d7d9bee25c77940085666abb1294e641f2",
+    "name": "VIDSYNC-1.0.0-x86_64.AppImage"
+  },
+  "operation": "core_overview_show",
+  "params": {},
+  "result": {
+    "architecture": "x86_64",
+    "bits": 64,
+    "counts": {
+      "basic_blocks": 27876,
+      "cross_references": 27152,
+      "exports": 0,
+      "functions": 1408,
+      "functions_with_generated_names": 1407,
+      "imports": 0,
+      "instructions": 147039,
+      "jump_tables": 35,
+      "strings": 4148,
+      "symbols": 0
+    },
+    "discovered_by": {
+      "call": 1175,
+      "code_pointer": 119,
+      "entry_point": 1,
+      "prologue": 113
+    },
+    "endianness": "little",
+    "entry_point": "0x2ae87",
+    "file": "VIDSYNC-1.0.0-x86_64.AppImage",
+    "format": "elf",
+    "image_base": "0x0",
+    "info": {
+      "build_id": "ef655b05ac26feebfd3bc24ec7ccb30389cefc33",
+      "compiler": "GCC: (Alpine 14.2.0) 14.2.0; Alpine clang version 19.1.4"
+    },
+    "kind": "executable",
+    "libraries": [],
+    "mitigations": {
+      "canary": false,
+      "code_signature": null,
+      "control_flow_guard": null,
+      "encrypted": null,
+      "fortify": false,
+      "high_entropy_va": null,
+      "no_seh": null,
+      "nx": true,
+      "pie": true,
+      "relro": "full",
+      "stripped": true
+    },
+    "section_count": 29,
+    "segments": [
+      {
+        "end": "0x4ce0",
+        "name": "LOAD0",
+        "perms": "r--",
+        "size": 19680,
+        "start": "0x0"
+      },
+      {
+        "end": "0x874a6",
+        "name": "LOAD1",
+        "perms": "r-x",
+        "size": 533670,
+        "start": "0x5000"
+      },
+      {
+        "end": "0xcee64",
+        "name": "LOAD2",
+        "perms": "r--",
+        "size": 290404,
+        "start": "0x88000"
+      },
+      {
+        "end": "0x11a258",
+        "name": "LOAD3",
+        "perms": "rw-",
+        "size": 306368,
+        "start": "0xcf598"
+      }
+    ],
+    "toolchain_hints": [
+      {
+        "category": "compiler",
+        "evidence": "no shared libraries needed",
+        "id": "static",
+        "label": "Statically linked",
+        "strength": "weak"
+      },
+      {
+        "category": "compiler",
+        "evidence": ".comment: GCC: (Alpine 14.2.0) 14.2.0; Alpine clang version 19.1.4",
+        "id": "compiler",
+        "label": "Clang/LLVM",
+        "strength": "strong"
+      }
+    ],
+    "warnings": []
+  },
+  "summary": "ELF (Linux, Android, BSD) executable for x86_64 with 1408 functions, 4148 strings, 0 imports from 0 libraries.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "indirect_jumps_unresolved",
+      "message": "69 indirect jumps could not be resolved; code they reach may be missing"
+    },
+    {
+      "code": "stripped_binary",
+      "message": "no local symbols: most function names are generated (sub_…)"
+    },
+    {
+      "code": "static_analysis_only",
+      "message": "functions reached only through computed pointers or at run time may be missing; absence is not proof"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x2ae87",
+      "label": "entry point"
+    }
+  ],
+  "links": []
+}

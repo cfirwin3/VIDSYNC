@@ -1,0 +1,60 @@
+{
+  "id": "ev_252946027d57066d88c4f209ce0137eda87afb8a6cbc1e6409054b7003725d79",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_address_show",
+  "params": {
+    "address": "0x3fdddd"
+  },
+  "result": {
+    "address": "0x3fdddd",
+    "bookmarks": {
+      "reason": "not bookmarked",
+      "remediation": "Bookmark it with native_bookmark_add.",
+      "state": "unavailable"
+    },
+    "comment": {
+      "reason": "no comment here",
+      "remediation": "Add one with native_comment_write.",
+      "state": "unavailable"
+    },
+    "function": {
+      "reason": "not inside any discovered function",
+      "remediation": "Run native_functions_list or native_functions_search to find nearby functions.",
+      "state": "unavailable"
+    },
+    "inline_comment": {
+      "reason": "no inline comment here",
+      "remediation": "Add one with native_inline_comment_write.",
+      "state": "unavailable"
+    },
+    "name": {
+      "reason": "no name at this address",
+      "remediation": "Give it one with native_name_set.",
+      "state": "unavailable"
+    }
+  },
+  "summary": "Context for 0x3fdddd.",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3fdddd"
+    }
+  ],
+  "links": []
+}

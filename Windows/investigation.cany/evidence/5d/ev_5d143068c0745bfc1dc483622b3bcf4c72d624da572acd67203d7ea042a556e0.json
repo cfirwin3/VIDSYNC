@@ -1,0 +1,131 @@
+{
+  "id": "ev_5d143068c0745bfc1dc483622b3bcf4c72d624da572acd67203d7ea042a556e0",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "a11y"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x12470",
+        "references": [],
+        "section": ".rodata",
+        "text": "org.a11y"
+      },
+      {
+        "address": "0x110aa5",
+        "references": [
+          {
+            "from": "0x3f6f77",
+            "function": "sub_3f6f40"
+          },
+          {
+            "from": "0x3fdae2",
+            "function": null
+          },
+          {
+            "from": "0x401a31",
+            "function": "sub_4019d0"
+          }
+        ],
+        "section": ".rodata",
+        "text": "org.a11y.atspi.Accessible"
+      },
+      {
+        "address": "0x31cbef",
+        "references": [
+          {
+            "from": "0x3f8871",
+            "function": null
+          },
+          {
+            "from": "0x3fbe15",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "org.a11y.Bus"
+      },
+      {
+        "address": "0x31cbfb",
+        "references": [
+          {
+            "from": "0x3f8878",
+            "function": null
+          },
+          {
+            "from": "0x3fbdf3",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "/org/a11y/bus"
+      },
+      {
+        "address": "0x31cc08",
+        "references": [
+          {
+            "from": "0x3f88cf",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "org.a11y.Status"
+      },
+      {
+        "address": "0x31cc2a",
+        "references": [
+          {
+            "from": "0x3fdae9",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "org.a11y.atspi.Registry"
+      },
+      {
+        "address": "0x31cc41",
+        "references": [
+          {
+            "from": "0x3fdaf0",
+            "function": null
+          }
+        ],
+        "section": ".rodata",
+        "text": "/org/a11y/atspi/accessible/root"
+      }
+    ],
+    "total": 7
+  },
+  "summary": "7 strings match \"a11y\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 7,
+    "total": 7
+  },
+  "locations": [],
+  "links": []
+}

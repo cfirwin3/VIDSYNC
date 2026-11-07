@@ -1,0 +1,49 @@
+{
+  "id": "ev_70e917bb82794b9c4d702f846e348270c5d37756e12723d3e527dcbc9ed89883",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 20,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": "Could not start ffmpeg"
+  },
+  "result": {
+    "matches": [
+      {
+        "address": "0x1d561",
+        "references": [],
+        "section": ".rodata",
+        "text": "Could not start ffmpeg: "
+      }
+    ],
+    "total": 1
+  },
+  "summary": "1 strings match \"Could not start ffmpeg\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

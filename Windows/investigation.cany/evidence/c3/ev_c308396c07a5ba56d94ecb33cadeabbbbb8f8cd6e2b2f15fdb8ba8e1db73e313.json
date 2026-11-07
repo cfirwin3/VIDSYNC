@@ -1,0 +1,38 @@
+{
+  "id": "ev_c308396c07a5ba56d94ecb33cadeabbbbb8f8cd6e2b2f15fdb8ba8e1db73e313",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_find",
+  "params": {
+    "address": "0x3d4953"
+  },
+  "result": {
+    "address": "0x3d4953",
+    "entry": "0x3d1e10",
+    "function": "sub_3d1e10",
+    "offset": 11075
+  },
+  "summary": "0x3d4953 is inside sub_3d1e10 (+0x2b43).",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3d4953"
+    }
+  ],
+  "links": []
+}

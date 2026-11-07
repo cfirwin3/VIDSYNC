@@ -1,0 +1,90 @@
+{
+  "id": "ev_8c825a8346728eaa9ae222951e36ec30344119d0960898a179d65852592772e0",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "native_function_pseudocode",
+  "params": {
+    "function": "0x3f3690"
+  },
+  "result": {
+    "calls": [
+      "*(uint64_t*)(r14 + 0x17",
+      "*(uint64_t*)(rax + 0x17",
+      "free",
+      "malloc",
+      "memcpy",
+      "sub_3a3a70",
+      "sub_3b4db0",
+      "sub_3f22b0",
+      "sub_3f3ca0",
+      "sub_40f885",
+      "sub_40fc00",
+      "sub_4b5cd0",
+      "sub_4b60f0",
+      "sub_4d94f0",
+      "sub_4e4640"
+    ],
+    "engine": "clean-room lifter",
+    "entry": "0x3f3690",
+    "function": "sub_3f3690",
+    "gotos": 3,
+    "inline_asm": 4,
+    "pseudo_code": "int64_t sub_3f3690()\n{\n    sub_3f3ca0(&stack_20);\n    rbx = stack_20;\n    if (rbx == -1) {\n        return rax;\n    } else {\n        r15 = stack_28;\n        r14 = stack_30;\n        if (r14 == 0) {\n            eax = 0;\n        } else {\n            __asm(\"sete al\");\n        }\n        stack_20 = r15;\n        stack_28 = r14;\n        stack_30 = 0xff;\n        stack_5a = al;\n        stack_58 = 0x201;\n        stack_0 = r15;\n        sub_4b5cd0(&stack_60, &stack_20);\n        eax = stack_60;\n        al += 0xf9;\n        if (al <= 0xf7 /* unsigned */) {\n            rax = sub_4b60f0(&stack_20);\n            if (rax != 0) {\n                stack_20 = 0x1ff;\n                stack_24 = 1;\n                rax = sub_4d94f0(&stack_20, rax);\n                if (rax != 0) {\n                    ecx = eax;\n                    ecx &= 3;\n                    edx = rcx - 2;\n                    if (edx >= 2 /* unsigned */) {\n                        if (rcx != 0) {\n                            rdi = rax;\n                            rdi--;\n                            (**(uint64_t*)(rax + 0x17))();\n                        }\n                    }\n                }\n            }\n        }\n        stack_98 = 0;\n        stack_a8 = 0;\n        r13d = 4;\n        rax = malloc(4);\n        if (rax == 0) {\nlabel_3f3b4c:\n            sub_40f885(1, r13);\n            __halt(); /* stops here */\n        } else {\n            r15 = rax;\n            *(uint32_t*)(rax) = 0x65646f6d;\n            stack_8 = 4;\n            stack_10 = rax;\n            stack_18 = 4;\n            r12d = 5;\n            r12 -= 0;\n            rax = malloc(r12);\n            if (rax == 0) {\n                sub_40f885(1, r12);\n                __halt(); /* stops here */\n            } else {\n                r13 = rax;\n                rax = \"dark\";\n                rsi = \"light\";\n                memcpy(r13, rax, r12);\n                stack_20 = 3;\n                stack_28 = r12;\n                stack_30 = r13;\n                stack_38 = r12;\n                sub_3f22b0(&stack_60, &stack_98, &stack_8, &stack_20);\n                if (stack_60 != 0xff) {\n                    sub_3a3a70(&stack_60);\n                }\n                r13d = 6;\n                rax = malloc(6);\n                if (rax == 0) {\n                    goto label_3f3b4c;\n                } else {\n                    r12 = rax;\n                    *(uint16_t*)(rax + 4) = 0x746e;\n                    *(uint32_t*)(rax) = 0x65636361;\n                    stack_d0 = 6;\n                    stack_d8 = rax;\n                    stack_e0 = 6;\n                    rax = *(uint64_t*)0x5fac08;\n                    ecx = 5;\n                    rcx = rax;\n                    rax = &data_110b4b;\n                    eax = *(uint8_t*)(rcx + rax);\n                    rcx = &data_343098;\n                    rcx = &data_3430a0;\n                    rsi = *(uint32_t*)(rcx + rax * 4);\n                    rsi += rcx;\n                    sub_40fc00(&stack_8, rsi, *(uint8_t*)(rax + rcx));\n                    r15 = stack_10;\n                    r13 = stack_18;\n                    if (r13 == 0) {\nlabel_3f38f8:\n                        stack_20 = 3;\n                        stack_28 = r13;\n                        stack_30 = rbp;\n                        stack_38 = r13;\n                        sub_3f22b0(&stack_60, &stack_98, &stack_d0, &stack_20);\n                        if (stack_60 != 0xff) {\n                            sub_3a3a70(&stack_60);\n                        }\n                        if (stack_8 != 0) {\n                            free(r15);\n                        }\n                        r13d = 11;\n                        rax = malloc(11);\n                        if (rax == 0) {\n                            goto label_3f3b4c;\n                        } else {\n                            rcx = 0x5f6e6f5f7065656b;\n                            *(uint64_t*)(rax) = rcx;\n                            *(uint32_t*)(rax + 7) = 0x706f745f;\n                            stack_8 = 11;\n                            stack_10 = rax;\n                            stack_18 = 11;\n                            eax = *(uint8_t*)0x5fd2c2;\n                            stack_20 = 1;\n                            __asm(\"setne [rsp+0x21]\");\n                            r15 = &stack_60;\n                            sub_3f22b0(r15, &stack_98, &stack_8, &stack_20);\n                            if (stack_60 != 0xff) {\n                                sub_3a3a70(&stack_60);\n                            }\n                            __asm(\"movups xmm0, [rsp+0x98]\");\n                            __asm(\"movups [rsp+0xb8], xmm0\");\n                            rax = stack_a8;\n                            stack_c8 = rax;\n                            stack_b0 = 5;\n                            rax = malloc(0x80);\n                            if (rax == 0) {\n                                sub_40f885(1, 0x80);\n                                __halt(); /* stops here */\n                            } else {\n                                stack_60 = 0x80;\n                                stack_68 = rax;\n                                stack_70 = 0;\n                                stack_20 = r15;\n                                rax = \"  \";\n                                stack_28 = rax;\n                                stack_30 = 2;\n                                stack_38 = 0;\n                                stack_40 = 0;\n                                sub_3b4db0(&stack_b0, &stack_20);\n                                r12 = stack_60;\n                                r15 = stack_68;\n                                if (r12 == -1) {\n                                    sub_3a3a70(&stack_b0);\n                                    if (rbx != 0) {\n                                        free(stack_0);\n                                    }\n                                    rax = *(uint64_t*)(r15);\n                                    if (rax == 1) {\n                                        rax = *(uint64_t*)(r15 + 8);\n                                        ecx = eax;\n                                        ecx &= 3;\n                                        edx = rcx - 2;\n                                        if (edx >= 2 /* unsigned */) {\n                                            if (rcx != 0) {\n                                                (**(uint64_t*)(rax + 0x17))(rax - 1);\n                                            }\n                                        }\n                                    } else {\n                                        if (rax == 0) {\n                                            if (*(uint64_t*)(r15 + 16) != 0) {\n                                                free(*(uint64_t*)(r15 + 8));\n                                            }\n                                        }\n                                    }\n                                    free(r15);\n                                } else {\n                                    rax = sub_4e4640(stack_0, r14, r15, stack_70);\n                                    r14 = rax;\n                                    if (r12 != 0) {\n                                        free(r15);\n                                    }\n                                    if (rbx != 0) {\n                                        free(stack_0);\n                                    }\n                                    if (r14 != 0) {\n                                        eax = r14d;\n                                        eax &= 3;\n                                        ecx = rax - 2;\n                                        if (ecx >= 2 /* unsigned */) {\n                                            if (rax != 0) {\n                                                rdi = r14;\n                                                rdi--;\n                                                (**(uint64_t*)(r14 + 0x17))();\n                                            }\n                                        }\n                                    }\n                                    sub_3a3a70(&stack_b0);\n                                }\n                                return rax;\n                            }\n                        }\n                    } else {\n                        rax = malloc(r13);\n                        if (rax == 0) {\n                            sub_40f885(1, r13);\n                            __halt(); /* stops here */\n                        } else {\n                            memcpy(rax, r15, r13);\n                            goto label_3f38f8;\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n",
+    "signature": "int64_t sub_3f3690()",
+    "strings": [
+      "dark",
+      "light",
+      "  "
+    ],
+    "structured": false
+  },
+  "summary": "Pseudo-C for sub_3f3690 (218 lines, partly unstructured).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "register_level",
+      "message": "variables are machine registers and stack slots; types are not recovered"
+    },
+    {
+      "code": "calling_convention_assumed",
+      "message": "call arguments follow the usual x86_64 convention and may be wrong for unusual functions"
+    },
+    {
+      "code": "conditions_from_flags",
+      "message": "branch conditions are rebuilt from the last compare and may be approximate"
+    },
+    {
+      "code": "unstructured_flow",
+      "message": "3 gotos remain where the control flow isn't a simple if/loop"
+    },
+    {
+      "code": "inline_asm",
+      "message": "4 instructions have no C rule and are shown as __asm(...)"
+    },
+    {
+      "code": "deep_engine_unavailable",
+      "message": "Deep mode is on, but Ghidra isn't installed. The person can get Ghidra from Settings → Engines. So this came from the built-in decompiler, which is less exact."
+    }
+  ],
+  "coverage": {
+    "status": "unknown"
+  },
+  "locations": [
+    {
+      "kind": "address",
+      "value": "0x3f3690"
+    }
+  ],
+  "links": [],
+  "carries_target_content": true
+}

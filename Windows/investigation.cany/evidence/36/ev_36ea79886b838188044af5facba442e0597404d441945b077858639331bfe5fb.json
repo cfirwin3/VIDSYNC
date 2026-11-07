@@ -1,0 +1,42 @@
+{
+  "id": "ev_36ea79886b838188044af5facba442e0597404d441945b077858639331bfe5fb",
+  "subject": {
+    "kind": "elf",
+    "sha256": "4c2cb950be053d8002703605bb9f19d7d9bee25c77940085666abb1294e641f2",
+    "name": "VIDSYNC-1.0.0-x86_64.AppImage"
+  },
+  "operation": "native_strings_find",
+  "params": {
+    "case_sensitive": false,
+    "limit": 50,
+    "mode": "literal",
+    "offset": 0,
+    "pattern": ".desktop"
+  },
+  "result": {
+    "matches": [],
+    "total": 0
+  },
+  "summary": "0 strings match \".desktop\".",
+  "confidence": "observed",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.5.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "data_sections_only",
+      "message": "only strings stored in the file are searched (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 0,
+    "total": 0
+  },
+  "locations": [],
+  "links": []
+}

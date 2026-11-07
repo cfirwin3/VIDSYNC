@@ -1,0 +1,44 @@
+{
+  "id": "ev_87ae16a494476252393f164aa913f20dfd138c1058f44a54246e9f17ca1e84b3",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_feature_find",
+  "params": {
+    "case_sensitive": false,
+    "query": "No streams found"
+  },
+  "result": {
+    "case_sensitive": false,
+    "function_names": [],
+    "functions": [],
+    "imports": [],
+    "query": "No streams found",
+    "strings": [],
+    "truncated": false
+  },
+  "summary": "\"No streams found\": 0 matching strings, 0 matching function names, 0 matching imports; 0 functions involved.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "no_match",
+      "message": "nothing matched; the text may be built at run time, encrypted, or come from a resource file (absence is not proof)"
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": []
+}

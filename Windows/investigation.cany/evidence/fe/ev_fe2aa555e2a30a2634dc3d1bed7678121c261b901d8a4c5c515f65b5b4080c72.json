@@ -1,0 +1,94 @@
+{
+  "id": "ev_fe2aa555e2a30a2634dc3d1bed7678121c261b901d8a4c5c515f65b5b4080c72",
+  "subject": {
+    "kind": "elf",
+    "sha256": "08026bbd1e269484a21b0c15a893387d9a04908a5a1146e3a663127dcb2599ac",
+    "name": "vidsync"
+  },
+  "operation": "core_evidence_browse",
+  "params": {
+    "show": {
+      "kind": "part",
+      "name": "callers"
+    },
+    "source": {
+      "evidence_id": "ev_b4d9aabd363b144c2ba27f822afaec299ef278d68100abec93ff387dbfc16d1e",
+      "kind": "saved"
+    }
+  },
+  "result": {
+    "coverage": {
+      "at_end": true,
+      "examined": 1,
+      "next_offset": null,
+      "status": "all-in-view",
+      "total": 1
+    },
+    "from_evidence": "ev_b4d9aabd363b144c2ba27f822afaec299ef278d68100abec93ff387dbfc16d1e",
+    "from_tool": "native_function_study",
+    "shown": {
+      "part": "callers",
+      "value": [
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d249f"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d3bae"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d40e3"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d4573"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d4d85"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d6d62"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d6f4b"
+        },
+        {
+          "caller": "0x3d1e10",
+          "name": "sub_3d1e10",
+          "site": "0x3d7089"
+        }
+      ]
+    }
+  },
+  "summary": "Part of native_function_study evidence (all-in-view).",
+  "confidence": "inferred",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.4.0",
+    "host": "linux-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [],
+  "links": [
+    "ev_b4d9aabd363b144c2ba27f822afaec299ef278d68100abec93ff387dbfc16d1e"
+  ]
+}
