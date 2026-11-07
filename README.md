@@ -1,5 +1,8 @@
 Stand-alone video player that synchronizes to Audacity 4.x timecode output.
 
+Demo:
+https://youtu.be/a5DPVMBU4uE
+
 - Set Audacity 4.x timecode to Hours:Minutes:Seconds+Milliseconds (00h00m00.000s).
 - Load VIDSYNC from the portable binary
 - Load a video in VIDSYNC
