@@ -1,0 +1,8 @@
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/itoa-2712835557a33868.d: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/u128_ext.rs
+
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/libitoa-2712835557a33868.rlib: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/u128_ext.rs
+
+/home/carl/Documents/Craft Anything/i-want-to-create-a/app/target/release/deps/libitoa-2712835557a33868.rmeta: /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs /home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/u128_ext.rs
+
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs:
+/home/carl/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/u128_ext.rs:

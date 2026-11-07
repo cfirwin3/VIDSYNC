@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "detail": "video playback advanced 1.50 s and frames are visible",
+      "passed": true,
+      "step": "move"
+    },
+    {
+      "detail": "typed start 00:00:04.000 applied; playback resumed and advanced 0.75 s",
+      "passed": true,
+      "step": "act"
+    },
+    {
+      "detail": "transport clock (997 px) and start-time field (673 px) are drawn",
+      "passed": true,
+      "step": "hud"
+    }
+  ],
+  "version": 1
+}
