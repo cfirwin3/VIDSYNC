@@ -1,4 +1,4 @@
-Stand-alone video player that synchronizes to Audacity 4.x timecode output.
+Stand-alone video player for Linux that synchronizes to Audacity 4.x timecode output.
 
 Demo:
 https://youtu.be/a5DPVMBU4uE
